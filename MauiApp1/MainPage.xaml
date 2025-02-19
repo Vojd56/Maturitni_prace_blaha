@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage"
+           >
+
+    <VerticalStackLayout>
+        <!-- Obrázek pevně nahoře -->
+        <Image Source="foto_neni.jpg" HeightRequest="185" Aspect="AspectFit" 
+               SemanticProperties.Description="dot net bot in a hovercraft number nine"/>
+
+        <!-- Scrollovatelný rozvrh s pevnou velikostí -->
+        <ScrollView HeightRequest="500">
+            <Grid BackgroundColor="White" Padding="10" WidthRequest="800" HeightRequest="300" HorizontalOptions="Center">
+
+                <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto" 
+                      ColumnDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto">
+
+                    <!-- Časové bloky -->
+                    <Label Grid.Row="0" Grid.Column="0" Text="" FontAttributes="Bold" BackgroundColor="#D3D3D3" Padding="12" FontSize="18"/>
+
+                    <Label Grid.Row="1" Grid.Column="0" BackgroundColor="#D3D3D3" Padding="12">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Po" FontSize="18" FontAttributes="Bold" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <Label Grid.Row="2" Grid.Column="0" BackgroundColor="#D3D3D3" Padding="12">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Út" FontSize="18" FontAttributes="Bold" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <Label Grid.Row="3" Grid.Column="0" BackgroundColor="#D3D3D3" Padding="12">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="St" FontSize="18" FontAttributes="Bold" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <Label Grid.Row="4" Grid.Column="0" BackgroundColor="#D3D3D3" Padding="12">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Čt" FontSize="18" FontAttributes="Bold" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <Label Grid.Row="5" Grid.Column="0" BackgroundColor="#D3D3D3" Padding="12">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Pá" FontSize="18" FontAttributes="Bold" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <!-- Časové bloky -->
+                    <Label Grid.Row="0" Grid.Column="1" BackgroundColor="#D3D3D3" Padding="8">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="0. " FontSize="18" FontAttributes="Bold" />
+                                <Span Text="7:05-7:50" FontSize="12" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <BoxView Grid.Row="0" Grid.Column="1" Grid.RowSpan="6" WidthRequest="1" TranslationX="40" Color="#D3D3D3" />
+                    <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="10" HeightRequest="1" TranslationY="25" Color="#D3D3D3" />
+                    
+                    <Label Grid.Row="0" Grid.Column="2" BackgroundColor="#D3D3D3" Padding="8">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="1. " FontSize="18" FontAttributes="Bold" />
+                                <Span Text="8:00-8:45" FontSize="12" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <BoxView Grid.Row="0" Grid.Column="2" Grid.RowSpan="6" WidthRequest="1" TranslationX="40" Color="#D3D3D3" />
+                    <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="10" HeightRequest="1" TranslationY="25" Color="#D3D3D3" />
+
+                    <Label Grid.Row="0" Grid.Column="3" BackgroundColor="#D3D3D3" Padding="8">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="2. " FontSize="18" FontAttributes="Bold" />
+                                <Span Text="8:55-9:40" FontSize="12" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <BoxView Grid.Row="0" Grid.Column="3" Grid.RowSpan="6" WidthRequest="1" TranslationX="40" Color="#D3D3D3" />
+                    <BoxView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="10" HeightRequest="1" TranslationY="25" Color="#D3D3D3" />
+
+                    <Label Grid.Row="0" Grid.Column="4" BackgroundColor="#D3D3D3" Padding="8">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="3. " FontSize="18" FontAttributes="Bold" />
+                                <Span Text="9:45-10:30" FontSize="12" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <BoxView Grid.Row="0" Grid.Column="4" Grid.RowSpan="6" WidthRequest="1" TranslationX="40" Color="#D3D3D3" />
+                    <BoxView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="10" HeightRequest="1" TranslationY="25" Color="#D3D3D3" />
+
+                    <Label Grid.Row="0" Grid.Column="5" BackgroundColor="#D3D3D3" Padding="8">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="4. " FontSize="18" FontAttributes="Bold" />
+                                <Span Text="10:50-11:35" FontSize="12" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <BoxView Grid.Row="0" Grid.Column="5" Grid.RowSpan="6" WidthRequest="1" TranslationX="40" Color="#D3D3D3" />
+
+                    <Label Grid.Row="0" Grid.Column="6" BackgroundColor="#D3D3D3" Padding="8">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="5. " FontSize="18" FontAttributes="Bold" />
+                                <Span Text="11:40-12:25" FontSize="12" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <BoxView Grid.Row="0" Grid.Column="6" Grid.RowSpan="6" WidthRequest="1" TranslationX="40" Color="#D3D3D3" />
+
+                    <Label Grid.Row="0" Grid.Column="7" BackgroundColor="#D3D3D3" Padding="8">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="6. " FontSize="18" FontAttributes="Bold" />
+                                <Span Text="12:30-13:15" FontSize="12" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <BoxView Grid.Row="0" Grid.Column="7" Grid.RowSpan="6" WidthRequest="1" TranslationX="40" Color="#D3D3D3" />
+
+                    <Label Grid.Row="0" Grid.Column="8" BackgroundColor="#D3D3D3" Padding="8">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="7. " FontSize="18" FontAttributes="Bold" />
+                                <Span Text="13:25-14:10" FontSize="12" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>

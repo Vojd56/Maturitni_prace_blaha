@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp1"
+    Shell.FlyoutBehavior="Flyout"
+    Title="MauiApp1">
+
+    <!-- ToolbarItem pro zobrazení aktuálního rozvrhu -->
+    <Shell.ToolbarItems>
+        <ToolbarItem Text="{Binding ScheduleText}" />
+    </Shell.ToolbarItems>
+
+    <ShellContent
+        Title="Hlavní stránka"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="Mapa"
+        ContentTemplate="{DataTemplate local:Kontakty}"
+        Route="Kontakty" />
+    <ShellContent
+        Title="Seznam Četby"
+        ContentTemplate="{DataTemplate local:DoporucenaCetba}"
+        Route="DoporucenaCetba" />
+
+    <ShellContent
+        Title="Plan Roku"
+        ContentTemplate="{DataTemplate local:PlanRoku}"
+        Route="PlanRoku" />
+
+</Shell>

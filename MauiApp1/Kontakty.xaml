@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Kontakty"
+             Title="Kontakty">
+    <ScrollView>
+        <VerticalStackLayout Padding="2" >
+
+            <Label Text="První patro" FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center"/>
+
+
+            <Grid RowSpacing="2" ColumnSpacing="2" Padding="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="150" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Row="0" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnKabinetA8Tapped" />
+                    </Border.GestureRecognizers>
+                    <Label Text="A8 
+                   Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="0" BackgroundColor="#87CEEB" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A7
+                   Žákovský klub" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="2" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A6 
+                   Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="3" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A5 
+                   CKP" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="4" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnKabinetA4Tapped" />
+                    </Border.GestureRecognizers>
+                    <Label Text="A4 
+                   Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="5" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnKabinetA3Tapped" />
+                    </Border.GestureRecognizers>
+                    <Label Text="A3  
+                   Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="6" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnKabinetA2Tapped" />
+                    </Border.GestureRecognizers>
+                    <Label Text="A2 
+                   Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="8" BackgroundColor="#D3D3D3" StrokeShape="RoundRectangle 10" Padding="20">
+                    <Label Text="Chodba" FontSize="16" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="2" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="Schodiště" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="2" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A10 
+                   Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="3" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A11 
+                   Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="4" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A12 
+                   Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="5" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A13 
+                   Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="6" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A14 
+                   Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="7" Grid.Column="0" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="WC - Dívky" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="7" Grid.Column="2" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="WC - Chlapci" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="4" BackgroundColor="#D3D3D3"
+StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="Chodba" FontSize="16" TextColor="Black"
+   HorizontalOptions="Center" VerticalOptions="Center"
+   HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="8" Grid.Column="2" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="10"
+WidthRequest="100" HeightRequest="50" HorizontalOptions="End" VerticalOptions="Start">
+                    <Label Text="Schodiště" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="8" Grid.Column="0" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="10"
+WidthRequest="100" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start">
+                    <Label Text="Schodiště" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+            </Grid>
+            <Border BackgroundColor="#8B0000" HeightRequest="4" 
+        Margin="10,20" HorizontalOptions="Fill"/>
+
+            <Label Text="Druhé patro - křídlo A" FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center"/>
+
+            <Grid RowSpacing="2" ColumnSpacing="2" Padding="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="150" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Row="0" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A108 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="1" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A107 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="2" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnKabinetA106Tapped" />
+                    </Border.GestureRecognizers>
+                    <Label Text="A106 
+                           Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="3" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A105 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="4" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A104 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="5" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A103 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="6" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnKabinetA102Tapped" />
+                    </Border.GestureRecognizers>
+                    <Label Text="A102 
+                           Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="7" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A101 
+                           Počítačová Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="8" BackgroundColor="#D3D3D3" StrokeShape="RoundRectangle 10" Padding="20">
+                    <Label Text="Chodba" FontSize="16" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="WC - Chlapci" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="1" Grid.Column="2" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="Schodiště" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="2" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A110 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="3" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A111 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="4" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A112 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="5" Grid.Column="2" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnKabinetA113Tapped" />
+                    </Border.GestureRecognizers>
+                    <Label Text="A113 
+                           Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="6" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A114 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+
+
+                <Border Grid.Row="7" Grid.Column="2" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="WC - Dívky" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="4" BackgroundColor="#D3D3D3" 
+StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="Chodba" FontSize="16" TextColor="Black" 
+   HorizontalOptions="Center" VerticalOptions="Center" 
+   HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="8" Grid.Column="2" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="10" 
+WidthRequest="100" HeightRequest="50" HorizontalOptions="End" VerticalOptions="Start">
+                    <Label Text="Schodiště" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="8" Grid.Column="0" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="10" 
+WidthRequest="100" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start">
+                    <Label Text="Schodiště" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+
+
+            </Grid>
+            <Label Text="Druhé patro - křídlo C" FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center"/>
+            <Grid RowSpacing="2" ColumnSpacing="2" Padding="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="250" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                    <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="#D3D3D3" 
+            StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="375" HeightRequest="250" 
+            HorizontalOptions="Start" VerticalOptions="End">
+                    <Label Text="Chodba" FontSize="16" TextColor="Black" HorizontalOptions="Center" 
+               VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+                        <Label.Rotation>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android" Value="90" />
+                                <On Platform="iOS" Value="90" />
+                                <On Platform="UWP" Value="90" />
+                            </OnPlatform>
+                        </Label.Rotation>
+                    </Label>
+                </Border>
+
+                    <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10" 
+            WidthRequest="75" HeightRequest="100" HorizontalOptions="End" VerticalOptions="Start">
+                        <Label Text="A101 
+                               Počítačová Učebna" FontSize="10" TextColor="White" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center">
+                            <Label.Rotation>
+                                <OnPlatform x:TypeArguments="x:Double">
+                                    <On Platform="Android" Value="90" />
+                                    <On Platform="iOS" Value="90" />
+                                    <On Platform="UWP" Value="90" />
+                                </OnPlatform>
+                            </Label.Rotation>
+                        </Label>
+                    </Border>
+                <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10" 
+WidthRequest="75" HeightRequest="100" HorizontalOptions="End" VerticalOptions="End">
+                    <Label Text="WC - Dívky" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center"
+   VerticalTextAlignment="Center">
+                        <Label.Rotation>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android" Value="90" />
+                                <On Platform="iOS" Value="90" />
+                                <On Platform="UWP" Value="90" />
+                            </OnPlatform>
+                        </Label.Rotation>
+                    </Label>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="1" 
+WidthRequest="50" HeightRequest="100" HorizontalOptions="Start" VerticalOptions="End" TranslationX="-15">
+                    <Label Text="Schodiště" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center"
+   VerticalTextAlignment="Center">
+                        <Label.Rotation>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android" Value="90" />
+                                <On Platform="iOS" Value="90" />
+                                <On Platform="UWP" Value="90" />
+                            </OnPlatform>
+                        </Label.Rotation>
+                    </Label>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="1" 
+WidthRequest="50" HeightRequest="100" HorizontalOptions="Start" VerticalOptions="Start" TranslationX="-15">
+                    <Label Text="Schodiště" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center"
+   VerticalTextAlignment="Center">
+                        <Label.Rotation>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android" Value="90" />
+                                <On Platform="iOS" Value="90" />
+                                <On Platform="UWP" Value="90" />
+                            </OnPlatform>
+                        </Label.Rotation>
+                    </Label>
+                </Border>
+                <Border Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" BackgroundColor="#D3D3D3" StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="150" HeightRequest="300" TranslationX="35">
+                    <Label Text="Chodba" FontSize="16" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="1" Grid.Column="0" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="35" WidthRequest="150" HeightRequest="100" TranslationX="15">
+                    <Label Text="WC" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="2" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10"  WidthRequest="150" HeightRequest="200" TranslationX="15" >
+                    <Label Text="Ekonomika" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="3" Grid.Column="1" BackgroundColor="#D3D3D3" StrokeShape="RoundRectangle 10" Padding="35"  WidthRequest="150" HeightRequest="100" TranslationX="35">
+                    <Label Text="Předsíň" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="4" Grid.Column="1" BackgroundColor="#1abc9c" StrokeShape="RoundRectangle 10" Padding="35"  WidthRequest="150" HeightRequest="100" TranslationX="35">
+                    <Label Text="Pokladna" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="3" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="25"  WidthRequest="150" HeightRequest="100" TranslationX="15">
+                    <Border.GestureRecognizers>
+                        
+                    <TapGestureRecognizer Tapped="OnSekratariatTapped" />
+                    
+                    </Border.GestureRecognizers>
+                    <Label Text="C104 
+                           Sekretariát" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="4" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="25"  WidthRequest="150" HeightRequest="100" TranslationX="15">
+                    <Border.GestureRecognizers>
+        
+                    <TapGestureRecognizer Tapped="OnReditelnaTapped" />
+                    
+    </Border.GestureRecognizers>
+                    <Label Text="C103 
+           Ředitelna" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+
+            </Grid>
+            <Border BackgroundColor="#8B0000" HeightRequest="4" 
+Margin="10,20" HorizontalOptions="Fill"/>
+            <Label Text="Třetí Patro - křídlo A" FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center"/>
+
+            <Grid RowSpacing="2" ColumnSpacing="2" Padding="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="150" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Row="0" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A208 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="1" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A207 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="2" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A206 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="3" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Border.GestureRecognizers>
+
+                        <TapGestureRecognizer Tapped="OnKabinetA205Tapped" />
+
+                    </Border.GestureRecognizers>
+                    <Label Text="A205 
+                           Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="4" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A204 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="5" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Border.GestureRecognizers>
+
+                        <TapGestureRecognizer Tapped="OnKabinetA203Tapped" />
+
+                    </Border.GestureRecognizers>
+                    <Label Text="A203 
+                           Učebna" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="6" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A202 
+                           Počítačová učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="7" Grid.Column="0" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="WC - Dívky" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="8" BackgroundColor="#D3D3D3" StrokeShape="RoundRectangle 10" Padding="20">
+                    <Label Text="Chodba" FontSize="16" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="WC - Tělesně Postížení" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="1" Grid.Column="2" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="Schodiště" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="2" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A210 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="3" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A211 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="4" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A212 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="5" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A213 
+                           Kabinet" FontSize="14" TextColor="White"  HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="6" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A214 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+
+
+                <Border Grid.Row="7" Grid.Column="2" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="WC - Chlapci" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="4" BackgroundColor="#D3D3D3" 
+StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="Chodba" FontSize="16" TextColor="Black" 
+   HorizontalOptions="Center" VerticalOptions="Center" 
+   HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="8" Grid.Column="2" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="10" 
+WidthRequest="100" HeightRequest="50" HorizontalOptions="End" VerticalOptions="Start">
+                    <Label Text="Schodiště" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="8" Grid.Column="0" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="10" 
+WidthRequest="100" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start">
+                    <Label Text="Schodiště" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+
+
+            </Grid>
+            
+            <Label Text="Třetí patro - křídlo C" FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center"/>
+            <Grid RowSpacing="2" ColumnSpacing="2" Padding="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="90" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="90" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="90" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="#D3D3D3" 
+            StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="375" HeightRequest="250" 
+            HorizontalOptions="Start" VerticalOptions="End">
+                    <Label Text="Chodba" FontSize="16" TextColor="Black" HorizontalOptions="Center" 
+               VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+                        <Label.Rotation>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android" Value="90" />
+                                <On Platform="iOS" Value="90" />
+                                <On Platform="UWP" Value="90" />
+                            </OnPlatform>
+                        </Label.Rotation>
+                    </Label>
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10" 
+            WidthRequest="75" HeightRequest="100" HorizontalOptions="End" VerticalOptions="Start">
+                    <Label Text="WC - Dívky" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center">
+                        <Label.Rotation>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android" Value="90" />
+                                <On Platform="iOS" Value="90" />
+                                <On Platform="UWP" Value="90" />
+                            </OnPlatform>
+                        </Label.Rotation>
+                    </Label>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10" 
+WidthRequest="75" HeightRequest="100" HorizontalOptions="End" VerticalOptions="End">
+                    <Label Text="WC - Chlapci" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center"
+   VerticalTextAlignment="Center">
+                        <Label.Rotation>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android" Value="90" />
+                                <On Platform="iOS" Value="90" />
+                                <On Platform="UWP" Value="90" />
+                            </OnPlatform>
+                        </Label.Rotation>
+                    </Label>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="1" 
+WidthRequest="50" HeightRequest="100" HorizontalOptions="Start" VerticalOptions="End" TranslationX="-15">
+                    <Label Text="Schodiště" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center"
+   VerticalTextAlignment="Center">
+                        <Label.Rotation>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android" Value="90" />
+                                <On Platform="iOS" Value="90" />
+                                <On Platform="UWP" Value="90" />
+                            </OnPlatform>
+                        </Label.Rotation>
+                    </Label>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="1" 
+WidthRequest="50" HeightRequest="100" HorizontalOptions="Start" VerticalOptions="Start" TranslationX="-15">
+                    <Label Text="Schodiště" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center"
+   VerticalTextAlignment="Center">
+                        <Label.Rotation>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android" Value="90" />
+                                <On Platform="iOS" Value="90" />
+                                <On Platform="UWP" Value="90" />
+                            </OnPlatform>
+                        </Label.Rotation>
+                    </Label>
+                </Border>
+                <Border Grid.Row="1" Grid.Column="1" Grid.RowSpan="5" BackgroundColor="#D3D3D3" 
+        StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="150" HeightRequest="400" TranslationX="35">
+                    <Grid>
+                        <Label Text="Chodba" FontSize="16" TextColor="Black" 
+               HorizontalOptions="Fill" VerticalOptions="Fill" 
+               HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="0" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="25" WidthRequest="150" HeightRequest="90" TranslationX="15">
+                    <Label Text="WC 
+                           Pedagogové" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="2" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="150" HeightRequest="60" TranslationX="15">
+                    <Border.GestureRecognizers>
+
+                        <TapGestureRecognizer Tapped="OnKabinetC205Tapped" />
+
+                    </Border.GestureRecognizers>
+                    <Label Text="C205 
+                           Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="3" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="25" WidthRequest="150" HeightRequest="90" TranslationX="15">
+                    <Label Text="C204 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="4" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="150" HeightRequest="60" TranslationX="15">
+                    <Border.GestureRecognizers>
+
+                        <TapGestureRecognizer Tapped="OnKabinetC203Tapped" />
+
+                    </Border.GestureRecognizers>
+                    <Label Text="C203 
+                           Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="5" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="25" WidthRequest="150" HeightRequest="90" TranslationX="15">
+                    <Label Text="C202 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="6" Grid.Column="1" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="25"  WidthRequest="150" HeightRequest="100" TranslationX="35">
+                    <Border.GestureRecognizers>
+
+                        <TapGestureRecognizer Tapped="OnKabinetC201Tapped" />
+
+                    </Border.GestureRecognizers>
+                    <Label Text="C201 
+                           Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+            </Grid>
+            <Border BackgroundColor="#8B0000" HeightRequest="4" 
+Margin="10,20" HorizontalOptions="Fill"/>
+            <Label Text="Čtvrté Patro - křídlo A" FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center"/>
+
+            <Grid RowSpacing="2" ColumnSpacing="2" Padding="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="150" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Row="0" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A308 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="1" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A307 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="2" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Border.GestureRecognizers>
+
+                        <TapGestureRecognizer Tapped="OnKabinetA306Tapped" />
+
+                    </Border.GestureRecognizers>
+                    <Label Text="A306 
+                           Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="3" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    
+                    <Label Text="A305 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="4" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A304 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="5" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A303 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="6" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A302 
+                           Počítačová učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="7" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Border.GestureRecognizers>
+
+                        <TapGestureRecognizer Tapped="OnKabinetA301Tapped" />
+
+                    </Border.GestureRecognizers>
+                    <Label Text="A301
+                           Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="8" BackgroundColor="#D3D3D3" StrokeShape="RoundRectangle 10" Padding="20">
+                    <Label Text="Chodba" FontSize="16" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="WC 
+                            Pedagogové" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="1" Grid.Column="2" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="Schodiště" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="2" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A310 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="3" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A311 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="4" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A312 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="5" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A313 
+                           Kabinet" FontSize="14" TextColor="White"  HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="6" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="A314 
+                           Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+
+
+                <Border Grid.Row="7" Grid.Column="2" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="WC - Chlapci" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="4" BackgroundColor="#D3D3D3" 
+StrokeShape="RoundRectangle 10" Padding="10">
+                    <Label Text="Chodba" FontSize="16" TextColor="Black" 
+   HorizontalOptions="Center" VerticalOptions="Center" 
+   HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="8" Grid.Column="2" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="10" 
+WidthRequest="100" HeightRequest="50" HorizontalOptions="End" VerticalOptions="Start">
+                    <Label Text="Schodiště" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="8" Grid.Column="0" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="10" 
+WidthRequest="100" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start">
+                    <Label Text="Schodiště" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+            </Grid>
+            <Label Text="Čtvté patro - křídlo C" FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center"/>
+            <Grid RowSpacing="2" ColumnSpacing="2" Padding="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="90" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="90" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="90" />
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="#D3D3D3" 
+            StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="375" HeightRequest="250" 
+            HorizontalOptions="Start" VerticalOptions="End">
+                    <Label Text="Chodba" FontSize="16" TextColor="Black" HorizontalOptions="Center" 
+               VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+                        <Label.Rotation>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android" Value="90" />
+                                <On Platform="iOS" Value="90" />
+                                <On Platform="UWP" Value="90" />
+                            </OnPlatform>
+                        </Label.Rotation>
+                    </Label>
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10" 
+            WidthRequest="75" HeightRequest="100" HorizontalOptions="End" VerticalOptions="Start">
+                    <Border.GestureRecognizers>
+
+                        <TapGestureRecognizer Tapped="OnKabinetA301Tapped" />
+
+                    </Border.GestureRecognizers>
+                    <Label Text="A301
+                           Kabinet" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center">
+                        <Label.Rotation>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android" Value="90" />
+                                <On Platform="iOS" Value="90" />
+                                <On Platform="UWP" Value="90" />
+                            </OnPlatform>
+                        </Label.Rotation>
+                    </Label>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10" 
+WidthRequest="75" HeightRequest="100" HorizontalOptions="End" VerticalOptions="End">
+                    <Label Text="WC - Chlapci" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center"
+   VerticalTextAlignment="Center">
+                        <Label.Rotation>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android" Value="90" />
+                                <On Platform="iOS" Value="90" />
+                                <On Platform="UWP" Value="90" />
+                            </OnPlatform>
+                        </Label.Rotation>
+                    </Label>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="1" 
+WidthRequest="50" HeightRequest="100" HorizontalOptions="Start" VerticalOptions="End" TranslationX="-15">
+                    <Label Text="Schodiště" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center"
+   VerticalTextAlignment="Center">
+                        <Label.Rotation>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android" Value="90" />
+                                <On Platform="iOS" Value="90" />
+                                <On Platform="UWP" Value="90" />
+                            </OnPlatform>
+                        </Label.Rotation>
+                    </Label>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#ffffff" StrokeShape="RoundRectangle 10" Padding="1" 
+WidthRequest="50" HeightRequest="100" HorizontalOptions="Start" VerticalOptions="Start" TranslationX="-15">
+                    <Label Text="Schodiště" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center"
+   VerticalTextAlignment="Center">
+                        <Label.Rotation>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android" Value="90" />
+                                <On Platform="iOS" Value="90" />
+                                <On Platform="UWP" Value="90" />
+                            </OnPlatform>
+                        </Label.Rotation>
+                    </Label>
+                </Border>
+                <Border Grid.Row="1" Grid.Column="1" Grid.RowSpan="5" BackgroundColor="#D3D3D3" 
+        StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="150" HeightRequest="400" TranslationX="35">
+                    <Grid>
+                        <Label Text="Chodba" FontSize="16" TextColor="Black" 
+               HorizontalOptions="Fill" VerticalOptions="Fill" 
+               HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="0" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="25" WidthRequest="150" HeightRequest="90" TranslationX="15">
+                    <Label Text="WC 
+                           Pedagogové" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="2" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="150" HeightRequest="60" TranslationX="15">
+                    <Border.GestureRecognizers>
+
+                        <TapGestureRecognizer Tapped="OnKabinetC305Tapped" />
+
+                    </Border.GestureRecognizers>
+                    <Label Text="C305 
+                           Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="3" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="25" WidthRequest="150" HeightRequest="90" TranslationX="15">
+                    <Label Text="C304 Síťová Laboratoř" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="4" Grid.Column="0" BackgroundColor="#7F8487" StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="150" HeightRequest="60" TranslationX="15">
+                    <Border.GestureRecognizers>
+
+                        <TapGestureRecognizer Tapped="OnServerovnaTapped" />
+
+                    </Border.GestureRecognizers>
+                    <Label Text="C303 
+                           Serverovna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+
+                <Border Grid.Row="5" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="20" WidthRequest="150" HeightRequest="90" TranslationX="15">
+                    <Label Text="C302 Počítačová učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                </Border>
+                <Border Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3" 
+    BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="35" WidthRequest="300" TranslationX="-40">
+                    <Label Text="C301 Počítačová učebna" FontSize="14" TextColor="White" 
+        HorizontalTextAlignment="Center" />
+                </Border>
+
+
+
+            </Grid>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
