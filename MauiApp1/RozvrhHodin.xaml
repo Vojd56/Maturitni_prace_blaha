@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.RozvrhHodin"
+             Title="Rozvrh hodin">
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="10">
+            <CollectionView 
+                            ItemsSource="{Binding Rozvrh}"
+                            SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Den}" FontSize="22" FontAttributes="Bold" TextColor="Red" VerticalOptions="Center" Margin="0,0,0,5"/>
+                            <CollectionView ItemsSource="{Binding Predmety}"
+                                            SelectionMode="None">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Frame Padding="10" CornerRadius="30" BackgroundColor="{Binding Barva}" Margin="5" WidthRequest="320">
+                                            <AbsoluteLayout>
+                                                <VerticalStackLayout>
+                                                    <Label Text="{Binding Nazev}" FontSize="18" FontAttributes="Bold" TextColor="White"/>
+                                                    <Label Text="{Binding Cas}" FontSize="14" TextColor="White"/>
+                                                </VerticalStackLayout>
+                                                <Label Text="{Binding Mistnost}" FontSize="12" TextColor="White" 
+               AbsoluteLayout.LayoutFlags="PositionProportional" 
+               AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize" 
+               Padding="1"/>
+                                            </AbsoluteLayout>
+                                        </Frame>
+
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

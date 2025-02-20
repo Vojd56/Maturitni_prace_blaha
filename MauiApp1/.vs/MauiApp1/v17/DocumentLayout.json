@@ -3,56 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\resources\\appicon\\appiconfg.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:resources\\appicon\\appiconfg.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\resources\\appicon\\appicon.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:resources\\appicon\\appicon.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\doporucenacetba.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:doporucenacetba.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\doporucenacetba.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:doporucenacetba.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\planroku.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:planroku.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\mauiapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:mauiapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\rozvrhhodin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:rozvrhhodin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\mauiapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:mauiapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\rozvrhhodin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:rozvrhhodin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\booksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:booksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\scheduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:scheduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\doporucenacetba.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:doporucenacetba.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\kontakty.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:kontakty.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\doporucenacetba.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:doporucenacetba.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\bookcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -64,10 +88,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\kontakty.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|solutionrelative:kontakty.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F18BCDBD-4305-45B5-B231-579249B85C8B}|MauiApp1.csproj|c:\\users\\vojte\\onedrive\\dokumenty\\github\\maturitni_prace_blaha\\maturitni_prace_blaha\\mauiapp1\\platforms\\windows\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -100,41 +120,107 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "appicon.svg",
+              "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\Resources\\AppIcon\\appicon.svg",
+              "RelativeDocumentMoniker": "Resources\\AppIcon\\appicon.svg",
+              "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\Resources\\AppIcon\\appicon.svg",
+              "RelativeToolTip": "Resources\\AppIcon\\appicon.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKMSURBVDhPjZNLSFRhFMd/3507M/dKPsacsYelWGZZFFJRkdSmNrUoatMiKggSN2YFEUX3MvQiiBYWtFAyggoXPSGyhQuhFrXQFr7GMFOowcZMUO9MM3pPi9Eao6gf/Bcfh3PO/5yPo8jAsqxI5vtvKKXuhMPhK4jInIBlWRH5Bw0NDYOWZUVs264B0DILKEUXCCIpZOIi7uetpHpCxN8GiffU4rrThEIhXzgcXiEidbZtH/5ZQKTV\u002B72oItjSYfG5vxwneoX2/iW80dvxb4ji9D4BIBAIeBsbG4fSOXJWzSR7qpt9D\u002BvWndpTlNXL2HCQ28PXaIuVEB2Dmsp8DiZqyN35FAFiw19IJpPcbmrq0wCq7\u002BvHd5Y\u002B2rMy5y3OcBXmqtccq9rB/uUFKI/GzfZRPhRdBhEQIRgKUlxSAoAm0uqtWNB5Yu\u002Bier5\u002BWOoWbnxAwAwQzDao3lLIobX5ePxemiImroCIzFm\u002BztT7/CPLzi8ej\u002BVxdeyu1nJjgMR3FwDl0fD4dJRHozuWACStjM/TGDlZ50tNqHuxejo\u002B\u002BZPL8wwqCvxUFPhZFfBSbIBMJti0wJjpDpJRQXfjzr6uj9u\u002BtYysCWijA4OPqzeXpVLJtE010zS9cZDM1DTa9ASLmoaOnh4cEYaySsoa30T5Mp5kPD7Ni\u002B5Rtt7qofzqO553jqQHmHExi5p8RcRNsb6y7VWtnm1ecjUdcdM7QClwhQPl8zi3o\u002BiXdREMMwvbtvv0KYfmRJSBtvlVY93O6ujLlc8WdsYcdE1RmutlV3kO20tzcXFRohBFerQ/ccE6c11EJB53xIk7EndmNSnObxIRsSwrMucWUvh2AxiGiWmYGOassjB/0yxzzPzvOWfyAyvlXYiiBFoWAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-02-20T21:48:28.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appiconfg.svg",
+              "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\Resources\\AppIcon\\appiconfg.svg",
+              "RelativeDocumentMoniker": "Resources\\AppIcon\\appiconfg.svg",
+              "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\Resources\\AppIcon\\appiconfg.svg",
+              "RelativeToolTip": "Resources\\AppIcon\\appiconfg.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKMSURBVDhPjZNLSFRhFMd/3507M/dKPsacsYelWGZZFFJRkdSmNrUoatMiKggSN2YFEUX3MvQiiBYWtFAyggoXPSGyhQuhFrXQFr7GMFOowcZMUO9MM3pPi9Eao6gf/Bcfh3PO/5yPo8jAsqxI5vtvKKXuhMPhK4jInIBlWRH5Bw0NDYOWZUVs264B0DILKEUXCCIpZOIi7uetpHpCxN8GiffU4rrThEIhXzgcXiEidbZtH/5ZQKTV\u002B72oItjSYfG5vxwneoX2/iW80dvxb4ji9D4BIBAIeBsbG4fSOXJWzSR7qpt9D\u002BvWndpTlNXL2HCQ28PXaIuVEB2Dmsp8DiZqyN35FAFiw19IJpPcbmrq0wCq7\u002BvHd5Y\u002B2rMy5y3OcBXmqtccq9rB/uUFKI/GzfZRPhRdBhEQIRgKUlxSAoAm0uqtWNB5Yu\u002Bier5\u002BWOoWbnxAwAwQzDao3lLIobX5ePxemiImroCIzFm\u002BztT7/CPLzi8ej\u002BVxdeyu1nJjgMR3FwDl0fD4dJRHozuWACStjM/TGDlZ50tNqHuxejo\u002B\u002BZPL8wwqCvxUFPhZFfBSbIBMJti0wJjpDpJRQXfjzr6uj9u\u002BtYysCWijA4OPqzeXpVLJtE010zS9cZDM1DTa9ASLmoaOnh4cEYaySsoa30T5Mp5kPD7Ni\u002B5Rtt7qofzqO553jqQHmHExi5p8RcRNsb6y7VWtnm1ecjUdcdM7QClwhQPl8zi3o\u002BiXdREMMwvbtvv0KYfmRJSBtvlVY93O6ujLlc8WdsYcdE1RmutlV3kO20tzcXFRohBFerQ/ccE6c11EJB53xIk7EndmNSnObxIRsSwrMucWUvh2AxiGiWmYGOassjB/0yxzzPzvOWfyAyvlXYiiBFoWAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-02-20T21:35:07.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "Platforms\\Android\\AndroidManifest.xml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-02-20T21:20:07.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RozvrhHodin.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\RozvrhHodin.xaml.cs",
+              "RelativeDocumentMoniker": "RozvrhHodin.xaml.cs",
+              "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\RozvrhHodin.xaml.cs",
+              "RelativeToolTip": "RozvrhHodin.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T20:22:43.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ScheduleViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\ScheduleViewModel.cs",
+              "RelativeDocumentMoniker": "ScheduleViewModel.cs",
+              "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\ScheduleViewModel.cs",
+              "RelativeToolTip": "ScheduleViewModel.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T20:21:06.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RozvrhHodin.xaml",
+              "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\RozvrhHodin.xaml",
+              "RelativeDocumentMoniker": "RozvrhHodin.xaml",
+              "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\RozvrhHodin.xaml",
+              "RelativeToolTip": "RozvrhHodin.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-20T19:45:53.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",
               "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\AppShell.xaml.cs",
               "RelativeToolTip": "AppShell.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T19:28:46.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2025-02-20T19:28:46.862Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\MainPage.xaml.cs",
               "RelativeToolTip": "MainPage.xaml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvyAAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA6wBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T16:58:03.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T16:58:03.241Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "MainActivity.cs",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\Platforms\\Android\\MainActivity.cs",
               "RelativeDocumentMoniker": "Platforms\\Android\\MainActivity.cs",
@@ -146,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
@@ -154,12 +240,11 @@
               "RelativeToolTip": "MauiProgram.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T16:03:08.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T16:03:08.264Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -171,19 +256,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 8,
               "Title": "BooksViewModel.cs",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\BooksViewModel.cs",
               "RelativeDocumentMoniker": "BooksViewModel.cs",
               "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\BooksViewModel.cs",
               "RelativeToolTip": "BooksViewModel.cs",
-              "ViewState": "AgIAAKQAAAAAAAAAAADwv8MAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAowCsAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-19T20:15:42.166Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "Microsoft.PackageDependencyResolution.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
@@ -195,46 +280,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",
               "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\MainPage.xaml",
               "RelativeToolTip": "MainPage.xaml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-19T14:35:22.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T14:35:22.934Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "DoporucenaCetba.xaml",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\DoporucenaCetba.xaml",
               "RelativeDocumentMoniker": "DoporucenaCetba.xaml",
               "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\DoporucenaCetba.xaml",
               "RelativeToolTip": "DoporucenaCetba.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAD4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-19T14:32:56.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T14:32:56.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "DoporucenaCetba.xaml.cs",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\DoporucenaCetba.xaml.cs",
               "RelativeDocumentMoniker": "DoporucenaCetba.xaml.cs",
               "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\DoporucenaCetba.xaml.cs",
               "RelativeToolTip": "DoporucenaCetba.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAqwCYAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwDMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T20:16:38.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T20:16:38.705Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\Book.cs",
               "RelativeDocumentMoniker": "Book.cs",
@@ -246,33 +328,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PlanRoku.xaml",
-              "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\PlanRoku.xaml",
-              "RelativeDocumentMoniker": "PlanRoku.xaml",
-              "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\PlanRoku.xaml",
-              "RelativeToolTip": "PlanRoku.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-19T15:34:24.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 12,
               "Title": "Kontakty.xaml",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\Kontakty.xaml",
               "RelativeDocumentMoniker": "Kontakty.xaml",
               "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\Kontakty.xaml",
               "RelativeToolTip": "Kontakty.xaml",
-              "ViewState": "AgIAAAwAAAAAAAAAAADwvx8AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAqwHIAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-19T14:32:53.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T14:32:53.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "BookCategory.cs",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\BookCategory.cs",
               "RelativeDocumentMoniker": "BookCategory.cs",
@@ -284,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "app.manifest",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\Platforms\\Windows\\app.manifest",
               "RelativeDocumentMoniker": "Platforms\\Windows\\app.manifest",
@@ -296,19 +364,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "MauiApp1.csproj",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\MauiApp1.csproj",
               "RelativeDocumentMoniker": "MauiApp1.csproj",
               "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\MauiApp1.csproj",
               "RelativeToolTip": "MauiApp1.csproj",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADcAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAEwD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-19T15:04:35.877Z"
+              "WhenOpened": "2025-02-19T15:04:35.877Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "Microsoft.WindowsAppSDK.SelfContained.targets",
               "DocumentMoniker": "C:\\Users\\vojte\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.250108002\\buildTransitive\\Microsoft.WindowsAppSDK.SelfContained.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.250108002\\buildTransitive\\Microsoft.WindowsAppSDK.SelfContained.targets",
@@ -320,20 +389,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
               "ToolTip": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\AppShell.xaml",
               "RelativeToolTip": "AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-19T14:40:44.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T14:40:44.459Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -341,12 +409,11 @@
               "RelativeToolTip": "App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-19T14:40:46.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T14:40:46.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "Xamarin.Android.Common.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.39\\tools\\Xamarin.Android.Common.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.39\\tools\\Xamarin.Android.Common.targets",
@@ -358,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "App.g.i.cs",
               "DocumentMoniker": "C:\\Users\\vojte\\OneDrive\\Dokumenty\\GitHub\\Maturitni_prace_blaha\\Maturitni_prace_blaha\\MauiApp1\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "RelativeDocumentMoniker": "obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
@@ -370,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "Microsoft.NET.Sdk.ImportWorkloads.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.103\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.ImportWorkloads.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.103\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.ImportWorkloads.targets",
@@ -382,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "Microsoft.WindowsAppSDK.SelfContained.targets",
               "DocumentMoniker": "C:\\Users\\vojte\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.240923002\\buildTransitive\\Microsoft.WindowsAppSDK.SelfContained.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.240923002\\buildTransitive\\Microsoft.WindowsAppSDK.SelfContained.targets",
@@ -393,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "Xamarin.Android.Common.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Common.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Common.targets",
@@ -401,6 +468,10 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.7\\tools\\Xamarin.Android.Common.targets",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-01-31T14:11:58.228Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

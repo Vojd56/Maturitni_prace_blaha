@@ -16,7 +16,10 @@
         Title="Hlavní stránka"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-
+    <ShellContent
+        Title="Rozvrh"
+        ContentTemplate="{DataTemplate local:RozvrhHodin}"
+        Route="RozvrhHodin" />
     <ShellContent
         Title="Mapa"
         ContentTemplate="{DataTemplate local:Kontakty}"
@@ -26,9 +29,5 @@
         ContentTemplate="{DataTemplate local:DoporucenaCetba}"
         Route="DoporucenaCetba" />
 
-    <ShellContent
-        Title="Plan Roku"
-        ContentTemplate="{DataTemplate local:PlanRoku}"
-        Route="PlanRoku" />
 
 </Shell>

@@ -5,6 +5,8 @@ using System.Collections.ObjectModel;
 
 namespace MauiApp1
 {
+
+
     public class Aktualita
     {
         public string Nadpis { get; set; }
