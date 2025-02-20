@@ -1,23 +1,18 @@
 using System.Collections.ObjectModel;
-using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Windows.Input;
+using System.ComponentModel;
 using Microsoft.Maui.Storage;
 using MauiApp1.Models;
-using System.ComponentModel;
+using System.Windows.Input;
 
 public class BooksViewModel : INotifyPropertyChanged
 {
+    public int MaxSelectedBooks { get; set; } = 20;
 
-
-
-
-
-    private const int MaxSelectedBooks = 20;
 
     private bool _isSelectionLimitReached;
     private ObservableCollection<BookCategory> _bookCategories;
+
     public ObservableCollection<BookCategory> BookCategories
     {
         get => _bookCategories;
@@ -26,10 +21,11 @@ public class BooksViewModel : INotifyPropertyChanged
             if (_bookCategories != value)
             {
                 _bookCategories = value;
-                OnPropertyChanged(nameof(BookCategories)); // Oznámení zmìny pro UI
+                OnPropertyChanged(nameof(BookCategories)); // Notify UI of change
             }
         }
     }
+
     public bool IsSelectionLimitReached
     {
         get => _isSelectionLimitReached;
@@ -38,12 +34,10 @@ public class BooksViewModel : INotifyPropertyChanged
             if (_isSelectionLimitReached != value)
             {
                 _isSelectionLimitReached = value;
-                OnPropertyChanged(nameof(IsSelectionLimitReached)); // Správná zmìna
+                OnPropertyChanged(nameof(IsSelectionLimitReached)); // Notify UI of change
             }
         }
     }
-
-
 
     public ICommand ToggleBookSelectionCommand { get; }
 
@@ -63,146 +57,162 @@ public class BooksViewModel : INotifyPropertyChanged
         }
     }
 
-
     private ObservableCollection<BookCategory> LoadBooks()
     {
         return new ObservableCollection<BookCategory>
-        {
-             new BookCategory("Svìtová a èeská literatura do konce 18. století", new List<Book>
-  {
-      new Book("Dekameron", "Giovanni Boccaccio"),
-      new Book("Robinson Crusoe", "Daniel Defoe"),
-      new Book("Gilgameš", "Neznámı autor"),
-      new Book("Lakomec", "Moliére"),
-      new Book("Promìny", "Publius Ovidius Naso"),
-      new Book("Hamlet", "William Shakespeare"),
-      new Book("Kupec benátskı", "William Shakespeare"),
-      new Book("Romeo a Julie", "William Shakespeare"),
-      new Book("Gulliverovy cesty", "Jonathan Swift")
-  }),
-  new BookCategory("Svìtová a èeská literatura 19. století", new List<Book>
-  {
-      new Book("Otec Goriot", "Honoré de Balzac"),
-      new Book("Král Lávra", "Karel Havlíèek Borovskı"),
-      new Book("Tyrolské elegie", "Karel Havlíèek Borovskı"),
-      new Book("Oliver Twist", "Charles Dickens"),
-      new Book("Vánoèní koleda", "Charles Dickens"),
-      new Book("Zloèin a trest", "Fjodor Michajloviè Dostojevskij"),
-      new Book("Tøi mušketıøi", "Alexandre Dumas"),
-      new Book("Kytice", "Karel Jaromír Erben"),
-      new Book("Revizor", "Nikolaj Vasiljeviè Gogol"),
-      new Book("Bídníci", "Victor Hugo"),
-      new Book("Chrám Matky Boí v Paøíi", "Victor Hugo"),
-      new Book("Máj", "Karel Hynek Mácha"),
-      new Book("Maryša", "Alois a Vilém Mrštíkové"),
-      new Book("Babièka", "Boena Nìmcová"),
-      new Book("Povídky malostranské", "Jan Neruda"),
-      new Book("Havran", "Edgar Allan Poe"),
-      new Book("Povídky", "Edgar Allan Poe"),
-      new Book("Even Onìgin", "Alexandr Sergejeviè Puškin"),
-      new Book("Naši Furianti", "Ladislav Stroupenickı"),
-      new Book("Anna Karenina", "Lev Nikolajeviè Tolstoj"),
-      new Book("Strakonickı dudák", "Josef Kajetán Tyl"),
-      new Book("Noc na Karlštejnì", "Jaroslav Vrchlickı"),
-      new Book("Obraz Doriana Greye", "Oscar Wilde")
-  }),
-  new BookCategory("Svìtová literatura 20. a 21. století", new List<Book>
-  {
-      new Book("Andìlé a démoni", "Dan Brown"),
-      new Book("Šifra mistra Leonarda", "Dan Brown"),
-      new Book("Pes baskervillskı", "Arthur Conan Doyle"),
-      new Book("Jméno rùe", "Umberto Eco"),
-      new Book("Velkı Gatsby", "Francis Scott Fitzgerald"),
-      new Book("Hlava XXII.", "Joseph Heller"),
-      new Book("Povídky", "Ernest Hemingway"),
-      new Book("Staøec a moøe", "Ernest Hemingway"),
-      new Book("Smrt na Nilu", "Agatha Christie"),
-      new Book("Vrada v Orient Expressu", "Agatha Christie"),
-      new Book("Hra o trùny", "George R. R. Martin"),
-      new Book("1984", "George Orwell"),
-      new Book("Farma zvíøat", "George Orwell"),
-      new Book("Na západní frontì klid", "Erich Maria Remarque"),
-      new Book("Percy Jackson: Zlodìj blesku", "Rick Riordan"),
-      new Book("Petr a Lucie", "Romain Rolland"),
-      new Book("Harry Potter a Kámen mudrcù", "Joanne K. Rowlingová"),
-      new Book("Jak jsem vyhrál válku", "Patrick Ryan"),
-      new Book("Malı princ", "Antoine de Saint-Exupéry"),
-      new Book("Sophiina volba", "William Styron"),
-      new Book("Hobit", "J. R. R. Tolkien"),
-      new Book("Pán prstenù: Spoleèenstvo prstenu", "J. R. R. Tolkien")
-  }),
-  new BookCategory("Èeská literatura 20. a 21. století", new List<Book>
-  {
-      new Book("Slezské písnì", "Petr Bezruè"),
-      new Book("Bílá nemoc", "Karel Èapek"),
-      new Book("Povídky z druhé kapsy", "Karel Èapek"),
-      new Book("Povídky z jedné kapsy", "Karel Èapek"),
-      new Book("R.U.R.", "Karel Èapek"),
-      new Book("Válka s mloky", "Karel Èapek"),
-      new Book("Krysaø", "Viktor Dyk"),
-      new Book("Spalovaè mrtvol", "Ladislav Fuks"),
-      new Book("Osudy dobrého vojáka Švejka", "Jaroslav Hašek"),
-      new Book("Ostøe sledované vlaky", "Bohumil Hrabal"),
-      new Book("Postøiiny", "Bohumil Hrabal"),
-      new Book("Staré povìsti èeské", "Alois Jirásek"),
-      new Book("Promìna", "Franz Kafka"),
-      new Book("Kníška", "Karel Kryl"),
-      new Book("Modlitba pro Kateøinu Horowitzovou", "Arnošt Lustig"),
-      new Book("Smrt krásnıch srncù", "Ota Pavel"),
-      new Book("Staré øecké báje a povìsti", "Eduard Petiška"),
-      new Book("Bylo nás pìt", "Karel Poláèek"),
-      new Book("Dobytí severního pólu", "Ladislav Smoljak, Zdenìk Svìrák"),
-      new Book("Rozmarné léto", "Vladislav Vanèura"),
-      new Book("Bájeèná léta pod psa", "Michal Viewegh")
-  })
-        };
+      {
+           new BookCategory("Svìtová a èeská literatura do konce 18. století", new List<Book>
+{
+    new Book("Boccaccio, Giovanni: Dekameron (Praha: Odeon, 2013, pøeklad: Radovan Krátkı)"),
+    new Book("Defoe, Daniel: ivot a zvláštní podivná dobrodruství Robinsona Crusoe,námoøníka z Yorku (Praha: Odeon 1996, pøeklad: 1. díl/Albert Vyskoèil, 2. díl/Timotheus Vodièka)"),
+    new Book("Gilgameš (Praha: Mladá Fronta, 1971, pøeklad: Lubomír Matouš)"),
+    new Book("Moliére: Lakomec (Praha: Orbis, 1959, pøeklad: Erik Adolf Saudek)"),
+    new Book("Naso, Publius Ovidius: Promìny (Praha: Odeon, 1969, pøeklad: Ferdinand Stiebitz)"),
+    new Book("Shakespeare, William: Hamlet (Brno: Atlantis, 2016, pøeklad: Martin Hilskı)"),
+    new Book("Shakespeare, William: Kupec benátskı (Brno: Atlantis, 2012, pøeklad: Martin Hilskı)"),
+    new Book("Shakespeare, William: Romeo a Julie (Brno: Atlantis, 2015, pøeklad: Martin Hilskı)"),
+    new Book("Swift, Jonathan: Gulliverovy cesty (Praha: Dobrovskı, 2014, pøeklad: Jan Váòa)")
+}),
+new BookCategory("Svìtová a èeská literatura 19. století", new List<Book>
+{
+    new Book("Balzac, Honoré de: Otec Goriot (Praha: Odeon, 1970, pøeklad: Boena Zimová)"),
+    new Book("Borovskı, Karel Havlíèek: Král Lávra"),
+    new Book("Borovskı, Karel Havlíèek: Tyrolské elegie"),
+    new Book("Dickens, Charles: Oliver Twist (Praha: Argo, 2014, pøeklad: Zdenìk Frıbort)"),
+    new Book("Dickens, Charles: Vánoèní koleda (Praha: XYZ, 2010, pøeklad: Jan Váòa)"),
+    new Book("Dostojevskij, Fjodor Michajloviè: Zloèin a trest (Praha: Academia, 2007, pøeklad: Jaroslav Hulák)"),
+    new Book("Dumas, Alexandre st.: Tøi mušketıøi (Praha: SNKL, 1956, pøeklad: Jaroslav a RùenaPochovi)"),
+    new Book("Erben, Karel Jaromír: Kytice"),
+    new Book("Gogol, Nikolaj Vasiljeviè: Revizor (Praha: Odeon, 1986, pøeklad: Karel Milota)"),
+    new Book("Hugo, Victor: Bídníci (Praha: Odeon, 1984, pøeklad: Zdeòka Pavlousková)"),
+    new Book("Hugo, Victor: Chrám Matky Boí v Paøíi (Praha: Odeon, 1978, pøeklad: Milena Tomášková)"),
+    new Book("Mácha, Karel Hynek: Máj"),
+    new Book("Mrštíkové, Alois a Vilém: Maryša"),
+    new Book("Nìmcová, Boena: Babièka"),
+    new Book("Neruda, Jan: Povídky malostranské"),
+    new Book("Poe, Edgar Allan: Havran (Praha: Dokoøán, 2008, pøeklad: Vítìzslav Nezval)"),
+    new Book("Poe, Edgar Allan: Povídky (Praha: Odeon 1987, pøeklad: Josef Schwarz)"),
+    new Book("Puškin, Alexandr Sergejeviè: Even Onìgin (Praha: Odeon, 1987, pøeklad: Olga Mašková)"),
+    new Book("Stroupenickı, Ladislav: Naši Furianti"),
+    new Book("Tolstoj, Lev Nikolajeviè: Anna Karenina (Praha: Lidové nakladatelství, 1973, pøeklad: Taána Hašková)"),
+    new Book("Tyl, Josef Kajetán: Strakonickı dudák aneb Hody divıch en"),
+    new Book("Vrchlickı, Jaroslav: Noc na Karlštejnì"),
+    new Book("Wilde, Oscar: Obraz Doriana Greye (Praha: Mladá fronta, 1999, pøeklad: Jiøí Zdenìk Novák)")
+}),
+new BookCategory("Svìtová literatura 20. a 21. století", new List<Book>
+{
+    new Book("Brown, Dan: Andìlé a démoni (Praha: Ago, 2006, pøeklad: Michala Marková)"),
+    new Book("Brown, Dan: Šifra mistra Leonarda (Praha: Ago, 2010, pøeklad: Zdík Dušek)"),
+    new Book("Doyle, Artur Conan: Pes baskervillskı (Praha: SNKL, 1956, pøeklad: Jaroslav a Rùena Pochovi)"),
+    new Book("Eco, Umberto: Jméno rùe (Praha: Argo, 2014, pøeklad: Zdenìk Frıbort)"),
+    new Book("Fitzgerald, Francis Scott: Velkı Gatsby (Praha: LEDA, 2011, pøeklad: Rudolf Èervenka a Alexander Tomskı)"),
+    new Book("Heller, Joseph: Hlava XXII. (Praha: Odeon, 1979, pøeklad: Miroslav Jindra)"),
+    new Book("Hemingway, Ernest: Povídky (Praha: Odeon 1978, pøeklad: Radoslav Nenadál)"),
+    new Book("Hemingway, Ernest: Staøec a moøe (Praha: Odeon, 2015, pøeklad: Šimon Pellar)"),
+    new Book("Christie, Agatha: Smrt na Nilu (Praha: Kniní klub, 2010, pøeklad: Drahomíra Hlinková)"),
+    new Book("Christie, Agatha: Vrada v Orient Expressu (Praha: Kniní klub, 2003, pøeklad: Eva Kondrysová)"),
+    new Book("Martin, George R. R.: Hra o trùny (Pøeloil Michala MARKOVÁ. Praha: Argo, 2017)"),
+    new Book("Orwell, George: 1984 (Praha: Argo, 2011, pøeklad: Petr Martínková)"),
+    new Book("Orwell, George: Farma zvíøat (Pøeloil Gabriel GÖSSEL, pøeloil Miloš HOLUB. Praha: Maa, 2021)"),
+    new Book("Remarque, Erich Maria: Na západní frontì klid (Praha: Naše vojsko, 1967, pøeklad: František Gel)"),
+    new Book("Riordan, Rick: Percy Jackson: Zlodìj blesku (Praha: Fragment, 2009, pøeklad: Dana Chodilová)"),
+    new Book("Rolland, Romain: Petr a Lucie (Praha: Práce, 1985, pøeklad: Jaroslav Zaorálek)"),
+    new Book("Rowlingová, Joanne K.: Harry Potter a Kámen mudrcù (Praha: Albatros, 2000, pøeklad: Vladimír Medek)"),
+    new Book("Ryan, Patrick: Jak jsem vyhrál válku (Praha: Naše vojsko, 1985, pøeklad: František Vrba)"),
+    new Book("Saint-Exupéry, Antoine de: Malı princ (Praha: Albatros, 1977, pøeklad: Zdeòka Stavinohová)"),
+    new Book("Styron, William: Sophiina volba (Praha: Odeon, 1985, pøeklad: Radoslav Nenadál)"),
+    new Book("Tolkien, John Ronald Reuel: Hobit, aneb, Cesta tam a zase zpátky.(Ilustroval JemimaCATLIN, pøeloil František VRBA. Praha: Argo, 2013)"),
+    new Book("Tolkien, John Ronald Reuel: Pán prstenù: Spoleèenstvo prstenu (Praha: Mladá Fronta,2001, pøeklad: Stanislava Pošustová)")
+}),
+new BookCategory("Èeská literatura 20. a 21. století", new List<Book>
+{
+    new Book("Bezruè, Petr: Slezské písnì"),
+    new Book("Èapek, Karel: Bílá nemoc"),
+    new Book("Èapek, Karel: Povídky z druhé kapsy"),
+    new Book("Èapek, Karel: Povídky z druhé kapsy"),
+    new Book("Èapek, Karel: R. U. R."),
+    new Book("Èapek, Karel: Válka s mloky"),
+    new Book("Dyk, Viktor: Krysaø"),
+    new Book("Fuks, Ladislav: Spalovaè mrtvol"),
+    new Book("Hašek, Jaroslav: Osudy dobrého vojáka Švejka za svìtové války"),
+    new Book("Hrabal, Bohumil: Ostøe sledované vlaky"),
+    new Book("Hrabal, Bohumil: Postøiiny"),
+    new Book("Jirásek, Alois: Staré povìsti èeské"),
+    new Book("Kafka, Franz: Promìna (Praha: Vyšehrad, 2005, pøeklad: Vladimír Kafka)"),
+    new Book("Kryl, Karel: Kníška"),
+    new Book("Lustig, Arnošt: Modlitba pro Kateøinu Horowitzovou"),
+    new Book("Pavel, Ota: Smrt krásnıch srncù"),
+    new Book("Petiška, Eduard: Staré øecké báje a povìsti"),
+    new Book("Poláèek, Karel: Bylo nás pìt"),
+    new Book("Smoljak, Ladislav Svìrák, Zdenìk: Dobytí severního pólu"),
+    new Book("Vanèura, Vladislav: Rozmarné léto"),
+    new Book("Viewegh, Michal: Bájeèná léta pod psa")
+})
+      };
     }
 
     public async void BookCheckedChanged(Book book)
     {
         int selectedCount = BookCategories.SelectMany(c => c.Books).Count(b => b.IsSelected);
 
-        if (selectedCount == MaxSelectedBooks)
-        {
-            //book.IsSelected = false;
-            //await Application.Current.MainPage.DisplayAlert("Limit dosaen",
-            //    $"Vybral jsi ji {MaxSelectedBooks} knih.", "OK");
-        }
+        bool shouldDisable = selectedCount >= MaxSelectedBooks;
 
-        bool enableBooks = selectedCount < MaxSelectedBooks;
         foreach (var b in BookCategories.SelectMany(c => c.Books))
         {
-            b.IsEnabled = enableBooks || b.IsSelected;
+            b.IsEnabled = !shouldDisable || b.IsSelected;  // Povolit pouze vybrané knihy
         }
 
+
+        UpdateSelectionStatus();
         SaveSelectedBooks();
+    }
+
+    private string _selectionStatus;
+    public string SelectionStatus
+    {
+        get => _selectionStatus;
+        set
+        {
+            _selectionStatus = value;
+            OnPropertyChanged(nameof(SelectionStatus));
+        }
+    }
+    private void UpdateSelectionStatus()
+    {
+        int selectedCount = BookCategories.SelectMany(c => c.Books).Count(b => b.IsSelected);
+        SelectionStatus = $"Vybráno: {selectedCount} / {MaxSelectedBooks} knih";
     }
 
 
     private void SaveSelectedBooks()
     {
-        var selectedBooks = BookCategories.SelectMany(c => c.Books).Where(b => b.IsSelected).Select(b => b.Title).ToList();
-        Preferences.Set("SelectedBooks", string.Join(",", selectedBooks));
+        var selectedBooks = BookCategories
+                            .SelectMany(c => c.Books)
+                            .Where(b => b.IsSelected)
+                            .Select(b => b.Title)
+                            .ToList();
+
+        Preferences.Set("SelectedBooks", string.Join("|||", selectedBooks)); // Pouití oddìlovaèe, kterı nebude v názvech knih
+
     }
+
 
     private void LoadSelectedBooks()
     {
         if (Preferences.ContainsKey("SelectedBooks"))
         {
-            var selectedTitles = Preferences.Get("SelectedBooks", "").Split(',');
+            var selectedTitles = Preferences.Get("SelectedBooks", "").Split("|||", StringSplitOptions.RemoveEmptyEntries);
 
             foreach (var book in BookCategories.SelectMany(c => c.Books))
             {
-                if (selectedTitles.Contains(book.Title))
-                {
-                    book.IsSelected = true;
-                }
+                book.IsSelected = selectedTitles.Contains(book.Title);
             }
 
-            int selectedCount = BookCategories.SelectMany(c => c.Books).Count(b => b.IsSelected);
-            IsSelectionLimitReached = selectedCount >= MaxSelectedBooks;
+            UpdateSelectionStatus(); // Aktualizace UI
         }
     }
+
+
 
     public event PropertyChangedEventHandler PropertyChanged;
     protected void OnPropertyChanged(string propertyName)

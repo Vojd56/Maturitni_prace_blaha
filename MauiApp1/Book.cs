@@ -1,14 +1,15 @@
 ﻿using System.ComponentModel;
+using System.Windows.Input;
 
 namespace MauiApp1.Models
 {
     public class Book : INotifyPropertyChanged
     {
         public string Title { get; set; }
-
-        public string CategoryName { get; set; }  // Přidání kategorie
+        public string CategoryName { get; set; }
 
         private bool _isSelected;
+
         public bool IsSelected
         {
             get => _isSelected;
@@ -36,10 +37,16 @@ namespace MauiApp1.Models
             }
         }
 
+        // Příkaz pro přepnutí výběru
+        public ICommand ToggleSelectionCommand { get; }
+
         public Book(string kniha, string categoryName = "")
         {
             Title = kniha;
             CategoryName = categoryName;
+
+            // Inicializace příkazu pro přepnutí výběru
+            ToggleSelectionCommand = new Command(() => IsSelected = !IsSelected);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

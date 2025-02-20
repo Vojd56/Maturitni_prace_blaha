@@ -9,8 +9,9 @@ namespace MauiApp1;
 
 public partial class DoporucenaCetba : ContentPage
 {
+
     // ViewModel pro propojení s UI
-    public BooksViewModel ViewModel { get; }
+    public BooksViewModel ViewModel { get; set; }
 
     public DoporucenaCetba()
     {
@@ -27,57 +28,81 @@ public partial class DoporucenaCetba : ContentPage
     }
 
     // Metoda pro generování PDF souboru
-    public void GeneratePdf()
+    public async void GeneratePdf()
     {
-        // Získání vybraných knih
-        var selectedBooks = ViewModel.BookCategories.SelectMany(c => c.Books)
-                                                    .Where(b => b.IsSelected)
-                                                    .OrderBy(b => b.Title, StringComparer.Create(new System.Globalization.CultureInfo("cs-CZ"), false)) // Seøazeno podle èeské abecedy
-                                                    .ToList();
 
-        if (selectedBooks.Count == 0)
+        try
         {
-            DisplayAlert("Chyba", "Žádná kniha není vybraná.", "OK");
-            return;
-        }
+            // Získání vybraných knih
+            var selectedBooks = ViewModel.BookCategories.SelectMany(c => c.Books)
+                                                        .Where(b => b.IsSelected)
+                                                        .OrderBy(b => b.Title, StringComparer.Create(new System.Globalization.CultureInfo("cs-CZ"), false))
+                                                        .ToList();
 
-        // Vytvoøení PDF dokumentu
-        var document = new PdfDocument();
-        var page = document.AddPage();
-        var gfx = XGraphics.FromPdfPage(page);
-        var font = new XFont("Verdana", 12, XFontStyle.Regular);
-
-        double yPoint = 20;
-
-        gfx.DrawString("Doporuèená èetba", font, XBrushes.Black, new XPoint(20, yPoint));
-        yPoint += 20;
-
-        // Iterace pøes vybrané knihy a jejich zobrazení na jednom øádku
-        int bookNumber = 1;
-        foreach (var book in selectedBooks)
-        {
-            string bookInfo = $"{bookNumber}. - {book.Title}";
-            gfx.DrawString(bookInfo, font, XBrushes.Black, new XPoint(20, yPoint));
-            yPoint += 20;
-
-            // Zajištìní, že text nepøekroèí stránku
-            if (yPoint > page.Height - 50)
+            if (selectedBooks.Count == 0)
             {
-                page = document.AddPage();
-                gfx = XGraphics.FromPdfPage(page);
-                yPoint = 20;
+                await MainThread.InvokeOnMainThreadAsync(() => DisplayAlert("Chyba", "Žádná kniha není vybraná.", "OK"));
+                return;
             }
 
-            bookNumber++;
+            // Vytvoøení PDF dokumentu
+            var document = new PdfDocument();
+            var page = document.AddPage();
+            var gfx = XGraphics.FromPdfPage(page);
+            var font = new XFont("Verdana", 12, XFontStyle.Regular);
+
+            double yPoint = 20;
+            gfx.DrawString("Doporuèená èetba", font, XBrushes.Black, new XPoint(20, yPoint));
+            yPoint += 20;
+
+            // Iterace pøes vybrané knihy
+            int bookNumber = 1;
+            foreach (var book in selectedBooks)
+            {
+                string bookInfo = $"{bookNumber}. - {book.Title}";
+                gfx.DrawString(bookInfo, font, XBrushes.Black, new XPoint(20, yPoint));
+                yPoint += 20;
+
+                // Zajištìní, že text nepøekroèí stránku
+                if (yPoint > page.Height - 50)
+                {
+                    page = document.AddPage();
+                    gfx = XGraphics.FromPdfPage(page);
+                    yPoint = 20;
+                }
+
+                bookNumber++;
+            }
+
+            // **Uložení PDF souboru do složky aplikace**
+            var fileName = Path.Combine(FileSystem.AppDataDirectory, "Cetba.pdf");
+            document.Save(fileName);
+
+            // **Zkontroluj, jestli se soubor správnì vytvoøil**
+            if (File.Exists(fileName))
+            {
+                await MainThread.InvokeOnMainThreadAsync(() =>
+                    DisplayAlert("Hotovo", $"Soubor byl uložen:\n{fileName}", "OK"));
+            }
+            else
+            {
+                await MainThread.InvokeOnMainThreadAsync(() =>
+                    DisplayAlert("Chyba", "Nepodaøilo se uložit PDF soubor.", "OK"));
+            }
+
+            // **Otevøení PDF souboru**
+            await Launcher.OpenAsync(new OpenFileRequest
+            {
+                File = new ReadOnlyFile(fileName)
+            });
         }
-
-        // Uložení PDF souboru
-        var fileName = Path.Combine(FileSystem.AppDataDirectory, "Cetba.pdf");
-        document.Save(fileName);
-
-        // Informace o úspìchu
-        DisplayAlert("Úspìch", $"PDF soubor byl uložen na {fileName}.", "OK");
+        catch (Exception ex)
+        {
+            await MainThread.InvokeOnMainThreadAsync(() =>
+                DisplayAlert("Chyba", $"Došlo k chybì: {ex.Message}", "OK"));
+        }
     }
+
 
     // Metoda pro zpracování zmìny stavu checkboxu (pokud se zaškrtnou/nezaškrtnou knihy)
     private void OnBookCheckedChanged(object sender, CheckedChangedEventArgs e)
@@ -89,9 +114,9 @@ public partial class DoporucenaCetba : ContentPage
             // Aktualizace poètu vybraných knih
             int selectedCount = ViewModel.BookCategories.SelectMany(c => c.Books).Count(b => b.IsSelected);
 
-            // Zobrazí hlášku, pokud je dosažen limit
-            //LimitWarningLabel.IsVisible = selectedCount >= 20;
+
         }
     }
+
 
 }
