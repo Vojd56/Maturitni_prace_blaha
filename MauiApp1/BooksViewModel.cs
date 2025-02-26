@@ -7,12 +7,13 @@ using System.Windows.Input;
 
 public class BooksViewModel : INotifyPropertyChanged
 {
+    // Maximální poèet vybraných knih
     public int MaxSelectedBooks { get; set; } = 20;
-
 
     private bool _isSelectionLimitReached;
     private ObservableCollection<BookCategory> _bookCategories;
 
+    // Kolekce kategorií knih
     public ObservableCollection<BookCategory> BookCategories
     {
         get => _bookCategories;
@@ -21,11 +22,12 @@ public class BooksViewModel : INotifyPropertyChanged
             if (_bookCategories != value)
             {
                 _bookCategories = value;
-                OnPropertyChanged(nameof(BookCategories)); // Notify UI of change
+                OnPropertyChanged(nameof(BookCategories)); // Notifikace UI o zmìnì
             }
         }
     }
 
+    // Indikátor dosažení limitu vybraných knih
     public bool IsSelectionLimitReached
     {
         get => _isSelectionLimitReached;
@@ -34,20 +36,22 @@ public class BooksViewModel : INotifyPropertyChanged
             if (_isSelectionLimitReached != value)
             {
                 _isSelectionLimitReached = value;
-                OnPropertyChanged(nameof(IsSelectionLimitReached)); // Notify UI of change
+                OnPropertyChanged(nameof(IsSelectionLimitReached)); // Notifikace UI o zmìnì
             }
         }
     }
 
+    // Pøíkaz pro zmìnu výbìru knihy
     public ICommand ToggleBookSelectionCommand { get; }
 
     public BooksViewModel()
     {
-        BookCategories = LoadBooks();
-        ToggleBookSelectionCommand = new Command<Book>(ToggleBookSelection);
-        LoadSelectedBooks();
+        BookCategories = LoadBooks(); // Naètení seznamu knih
+        ToggleBookSelectionCommand = new Command<Book>(ToggleBookSelection); // Pøiøazení pøíkazu
+        LoadSelectedBooks(); // Naètení uloženého výbìru knih
     }
 
+    // Pøepíná stav výbìru knihy
     private void ToggleBookSelection(Book book)
     {
         if (book != null)
@@ -57,6 +61,7 @@ public class BooksViewModel : INotifyPropertyChanged
         }
     }
 
+    // Naèítá pøeddefinovaný seznam knih podle kategorií
     private ObservableCollection<BookCategory> LoadBooks()
     {
         return new ObservableCollection<BookCategory>
@@ -151,20 +156,21 @@ new BookCategory("Èeská literatura 20. a 21. století", new List<Book>
       };
     }
 
+    // Aktualizuje stav pøi zmìnì výbìru knihy
     public async void BookCheckedChanged(Book book)
     {
         int selectedCount = BookCategories.SelectMany(c => c.Books).Count(b => b.IsSelected);
 
+        // Pokud je dosažen maximální poèet, zakázat další výbìr
         bool shouldDisable = selectedCount >= MaxSelectedBooks;
 
         foreach (var b in BookCategories.SelectMany(c => c.Books))
         {
-            b.IsEnabled = !shouldDisable || b.IsSelected;  // Povolit pouze vybrané knihy
+            b.IsEnabled = !shouldDisable || b.IsSelected;
         }
 
-
-        UpdateSelectionStatus();
-        SaveSelectedBooks();
+        UpdateSelectionStatus(); // Aktualizace UI
+        SaveSelectedBooks(); // Uložení vybraných knih
     }
 
     private string _selectionStatus;
@@ -177,13 +183,15 @@ new BookCategory("Èeská literatura 20. a 21. století", new List<Book>
             OnPropertyChanged(nameof(SelectionStatus));
         }
     }
+
+    // Aktualizuje stavový text pro uživatele
     private void UpdateSelectionStatus()
     {
         int selectedCount = BookCategories.SelectMany(c => c.Books).Count(b => b.IsSelected);
         SelectionStatus = $"Vybráno: {selectedCount} / {MaxSelectedBooks} knih";
     }
 
-
+    // Uloží seznam vybraných knih do uživatelských preferencí
     private void SaveSelectedBooks()
     {
         var selectedBooks = BookCategories
@@ -192,11 +200,10 @@ new BookCategory("Èeská literatura 20. a 21. století", new List<Book>
                             .Select(b => b.Title)
                             .ToList();
 
-        Preferences.Set("SelectedBooks", string.Join("|||", selectedBooks)); // Použití oddìlovaèe, který nebude v názvech knih
-
+        Preferences.Set("SelectedBooks", string.Join("|||", selectedBooks)); // Oddìlovaè "|||" zabraòuje konfliktùm
     }
 
-
+    // Naète døíve vybrané knihy ze systému
     private void LoadSelectedBooks()
     {
         if (Preferences.ContainsKey("SelectedBooks"))
@@ -208,12 +215,11 @@ new BookCategory("Èeská literatura 20. a 21. století", new List<Book>
                 book.IsSelected = selectedTitles.Contains(book.Title);
             }
 
-            UpdateSelectionStatus(); // Aktualizace UI
+            UpdateSelectionStatus(); // Aktualizace UI po naètení
         }
     }
 
-
-
+    // Implementace rozhraní INotifyPropertyChanged pro správnou aktualizaci UI
     public event PropertyChangedEventHandler PropertyChanged;
     protected void OnPropertyChanged(string propertyName)
     {

@@ -6,7 +6,7 @@
     <ScrollView>
         <VerticalStackLayout Padding="2" >
 
-            <Label Text="První patro" FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center"/>
+            <Label Text="První patro" FontSize="20" FontAttributes="Bold" TextColor="#038DA0" HorizontalTextAlignment="Center"/>
 
 
             <Grid RowSpacing="2" ColumnSpacing="2" Padding="2">
@@ -32,8 +32,11 @@
                     <Border.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnKabinetA8Tapped" />
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="A8 
                    Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                    <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
 
                 <Border Grid.Row="1" Grid.Column="0" BackgroundColor="#87CEEB" StrokeShape="RoundRectangle 10" Padding="10">
@@ -52,22 +55,31 @@
                     <Border.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnKabinetA4Tapped" />
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="A4 
                    Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                        <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
                 <Border Grid.Row="5" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10">
                     <Border.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnKabinetA3Tapped" />
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="A3  
                    Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                    <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
                 <Border Grid.Row="6" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10">
                     <Border.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnKabinetA2Tapped" />
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="A2 
                    Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                        <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
 
                 <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="8" BackgroundColor="#D3D3D3" StrokeShape="RoundRectangle 10" Padding="20">
@@ -124,7 +136,7 @@ WidthRequest="100" HeightRequest="50" HorizontalOptions="Start" VerticalOptions=
             <Border BackgroundColor="#8B0000" HeightRequest="4" 
         Margin="10,20" HorizontalOptions="Fill"/>
 
-            <Label Text="Druhé patro - křídlo A" FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center"/>
+            <Label Text="Druhé patro - křídlo A" FontSize="20" FontAttributes="Bold" TextColor="#038DA0" HorizontalTextAlignment="Center"/>
 
             <Grid RowSpacing="2" ColumnSpacing="2" Padding="2">
                 <Grid.RowDefinitions>
@@ -157,8 +169,11 @@ WidthRequest="100" HeightRequest="50" HorizontalOptions="Start" VerticalOptions=
                     <Border.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnKabinetA106Tapped" />
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="A106 
                            Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                    <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
                 <Border Grid.Row="3" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
                     <Label Text="A105 
@@ -176,8 +191,11 @@ WidthRequest="100" HeightRequest="50" HorizontalOptions="Start" VerticalOptions=
                     <Border.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnKabinetA102Tapped" />
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="A102 
                            Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                        <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
                 <Border Grid.Row="7" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
                     <Label Text="A101 
@@ -209,8 +227,11 @@ WidthRequest="100" HeightRequest="50" HorizontalOptions="Start" VerticalOptions=
                     <Border.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnKabinetA113Tapped" />
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="A113 
                            Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                    <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
                 <Border Grid.Row="6" Grid.Column="2" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
                     <Label Text="A114 
@@ -240,7 +261,7 @@ WidthRequest="100" HeightRequest="50" HorizontalOptions="Start" VerticalOptions=
 
 
             </Grid>
-            <Label Text="Druhé patro - křídlo C" FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center"/>
+            <Label Text="Druhé patro - křídlo C" FontSize="20" FontAttributes="Bold" TextColor="#038DA0" HorizontalTextAlignment="Center"/>
             <Grid RowSpacing="2" ColumnSpacing="2" Padding="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="250" />
@@ -339,30 +360,36 @@ WidthRequest="50" HeightRequest="100" HorizontalOptions="Start" VerticalOptions=
                 <Border Grid.Row="4" Grid.Column="1" BackgroundColor="#1abc9c" StrokeShape="RoundRectangle 10" Padding="35"  WidthRequest="150" HeightRequest="100" TranslationX="35">
                     <Label Text="Pokladna" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
                 </Border>
-                <Border Grid.Row="3" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="25"  WidthRequest="150" HeightRequest="100" TranslationX="15">
+                <Border Grid.Row="3" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="25"  WidthRequest="150" HeightRequest="115" TranslationX="15">
                     <Border.GestureRecognizers>
                         
                     <TapGestureRecognizer Tapped="OnSekratariatTapped" />
                     
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="C104 
                            Sekretariát" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                        <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
-                <Border Grid.Row="4" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="25"  WidthRequest="150" HeightRequest="100" TranslationX="15">
+                <Border Grid.Row="4" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="25"  WidthRequest="150" HeightRequest="115" TranslationX="15">
                     <Border.GestureRecognizers>
         
                     <TapGestureRecognizer Tapped="OnReditelnaTapped" />
                     
     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="C103 
            Ředitelna" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                    <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
 
 
             </Grid>
             <Border BackgroundColor="#8B0000" HeightRequest="4" 
 Margin="10,20" HorizontalOptions="Fill"/>
-            <Label Text="Třetí Patro - křídlo A" FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center"/>
+            <Label Text="Třetí Patro - křídlo A" FontSize="20" FontAttributes="Bold" TextColor="#038DA0" HorizontalTextAlignment="Center"/>
 
             <Grid RowSpacing="2" ColumnSpacing="2" Padding="2">
                 <Grid.RowDefinitions>
@@ -401,8 +428,11 @@ Margin="10,20" HorizontalOptions="Fill"/>
                         <TapGestureRecognizer Tapped="OnKabinetA205Tapped" />
 
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="A205 
-                           Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                           Kabinjhjhjhet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                            <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                        </StackLayout>
                 </Border>
                 <Border Grid.Row="4" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
                     <Label Text="A204 
@@ -414,8 +444,11 @@ Margin="10,20" HorizontalOptions="Fill"/>
                         <TapGestureRecognizer Tapped="OnKabinetA203Tapped" />
 
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="A203 
                            Učebna" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                    <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
                 <Border Grid.Row="6" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
                     <Label Text="A202 
@@ -478,8 +511,8 @@ WidthRequest="100" HeightRequest="50" HorizontalOptions="Start" VerticalOptions=
 
 
             </Grid>
-            
-            <Label Text="Třetí patro - křídlo C" FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center"/>
+
+            <Label Text="Třetí patro - křídlo C" FontSize="20" FontAttributes="Bold" TextColor="#038DA0" HorizontalTextAlignment="Center"/>
             <Grid RowSpacing="2" ColumnSpacing="2" Padding="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -578,49 +611,58 @@ WidthRequest="50" HeightRequest="100" HorizontalOptions="Start" VerticalOptions=
                            Pedagogové" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
                 </Border>
 
-                <Border Grid.Row="2" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="150" HeightRequest="60" TranslationX="15">
+                <Border Grid.Row="2" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="150" HeightRequest="90"  TranslationY="10" TranslationX="15">
                     <Border.GestureRecognizers>
 
                         <TapGestureRecognizer Tapped="OnKabinetC205Tapped" />
 
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="C205 
                            Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                        <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
 
-                <Border Grid.Row="3" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="25" WidthRequest="150" HeightRequest="90" TranslationX="15">
+                <Border Grid.Row="3" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="25" WidthRequest="150" HeightRequest="70" TranslationY="10" TranslationX="15">
                     <Label Text="C204 
                            Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
                 </Border>
 
-                <Border Grid.Row="4" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="150" HeightRequest="60" TranslationX="15">
+                <Border Grid.Row="4" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="150" HeightRequest="85" TranslationY="10" TranslationX="15">
                     <Border.GestureRecognizers>
 
                         <TapGestureRecognizer Tapped="OnKabinetC203Tapped" />
 
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="C203 
                            Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                        <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
 
-                <Border Grid.Row="5" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="25" WidthRequest="150" HeightRequest="90" TranslationX="15">
+                <Border Grid.Row="5" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="15" WidthRequest="150" HeightRequest="70" TranslationY="10" TranslationX="15">
                     <Label Text="C202 
                            Učebna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
                 </Border>
-                <Border Grid.Row="6" Grid.Column="1" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="25"  WidthRequest="150" HeightRequest="100" TranslationX="35">
+                <Border Grid.Row="6" Grid.Column="1" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="25"  WidthRequest="150" HeightRequest="115" TranslationX="35">
                     <Border.GestureRecognizers>
 
                         <TapGestureRecognizer Tapped="OnKabinetC201Tapped" />
 
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="C201 
                            Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                    <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
 
             </Grid>
             <Border BackgroundColor="#8B0000" HeightRequest="4" 
 Margin="10,20" HorizontalOptions="Fill"/>
-            <Label Text="Čtvrté Patro - křídlo A" FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center"/>
+            <Label Text="Čtvrté Patro - křídlo A" FontSize="20" FontAttributes="Bold" TextColor="#038DA0" HorizontalTextAlignment="Center"/>
 
             <Grid RowSpacing="2" ColumnSpacing="2" Padding="2">
                 <Grid.RowDefinitions>
@@ -651,13 +693,16 @@ Margin="10,20" HorizontalOptions="Fill"/>
                 </Border>
                 <Border Grid.Row="2" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10">
                     <Border.GestureRecognizers>
-
                         <TapGestureRecognizer Tapped="OnKabinetA306Tapped" />
-
                     </Border.GestureRecognizers>
-                    <Label Text="A306 
-                           Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                    <StackLayout>
+                        <Label Text="A306 
+                               Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                        <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
+
+
                 <Border Grid.Row="3" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="10">
                     
                     <Label Text="A305 
@@ -681,8 +726,12 @@ Margin="10,20" HorizontalOptions="Fill"/>
                         <TapGestureRecognizer Tapped="OnKabinetA301Tapped" />
 
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="A301
                            Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                        <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+
                 </Border>
 
                 <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="8" BackgroundColor="#D3D3D3" StrokeShape="RoundRectangle 10" Padding="20">
@@ -718,7 +767,7 @@ Margin="10,20" HorizontalOptions="Fill"/>
 
 
                 <Border Grid.Row="7" Grid.Column="2" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10">
-                    <Label Text="WC - Chlapci" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                    <Label Text="WC  Chlapci" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
                 </Border>
                 <Border Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="4" BackgroundColor="#D3D3D3" 
 StrokeShape="RoundRectangle 10" Padding="10">
@@ -737,7 +786,7 @@ WidthRequest="100" HeightRequest="50" HorizontalOptions="Start" VerticalOptions=
                 </Border>
 
             </Grid>
-            <Label Text="Čtvté patro - křídlo C" FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center"/>
+            <Label Text="Čtvté patro - křídlo C" FontSize="20" FontAttributes="Bold" TextColor="#038DA0" HorizontalTextAlignment="Center"/>
             <Grid RowSpacing="2" ColumnSpacing="2" Padding="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -777,10 +826,9 @@ WidthRequest="100" HeightRequest="50" HorizontalOptions="Start" VerticalOptions=
                         <TapGestureRecognizer Tapped="OnKabinetA301Tapped" />
 
                     </Border.GestureRecognizers>
-                    <Label Text="A301
-                           Kabinet" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center">
-                        <Label.Rotation>
+                    <StackLayout>
+                        <Label Text="A301 Kabinet" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center" TranslationY="10" VerticalTextAlignment="Center" >
+                    <Label.Rotation>
                             <OnPlatform x:TypeArguments="x:Double">
                                 <On Platform="Android" Value="90" />
                                 <On Platform="iOS" Value="90" />
@@ -788,10 +836,20 @@ WidthRequest="100" HeightRequest="50" HorizontalOptions="Start" VerticalOptions=
                             </OnPlatform>
                         </Label.Rotation>
                     </Label>
+                        <Label Text=" ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" TranslationY="10" >
+                            <Label.Rotation>
+                                <OnPlatform x:TypeArguments="x:Double">
+                                    <On Platform="Android" Value="90" />
+                                    <On Platform="iOS" Value="90" />
+                                    <On Platform="UWP" Value="90" />
+                                </OnPlatform>
+                            </Label.Rotation>
+                        </Label>
+                    </StackLayout>
                 </Border>
                 <Border Grid.Row="0" Grid.Column="2" BackgroundColor="#FFA07A" StrokeShape="RoundRectangle 10" Padding="10" 
 WidthRequest="75" HeightRequest="100" HorizontalOptions="End" VerticalOptions="End">
-                    <Label Text="WC - Chlapci" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center"
+                    <Label Text="WC  Chlapci" FontSize="10" TextColor="Black" HorizontalTextAlignment="Center"
    VerticalTextAlignment="Center">
                         <Label.Rotation>
                             <OnPlatform x:TypeArguments="x:Double">
@@ -842,14 +900,17 @@ WidthRequest="50" HeightRequest="100" HorizontalOptions="Start" VerticalOptions=
                            Pedagogové" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
                 </Border>
 
-                <Border Grid.Row="2" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="150" HeightRequest="60" TranslationX="15">
+                <Border Grid.Row="2" Grid.Column="0" BackgroundColor="#FFD700" StrokeShape="RoundRectangle 10" Padding="10" WidthRequest="150" HeightRequest="85" TranslationX="15">
                     <Border.GestureRecognizers>
 
                         <TapGestureRecognizer Tapped="OnKabinetC305Tapped" />
 
                     </Border.GestureRecognizers>
+                    <StackLayout>
                     <Label Text="C305 
                            Kabinet" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" />
+                    <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
 
                 <Border Grid.Row="3" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="25" WidthRequest="150" HeightRequest="90" TranslationX="15">
@@ -862,8 +923,11 @@ WidthRequest="50" HeightRequest="100" HorizontalOptions="Start" VerticalOptions=
                         <TapGestureRecognizer Tapped="OnServerovnaTapped" />
 
                     </Border.GestureRecognizers>
-                    <Label Text="C303 
+                    <StackLayout>
+                        <Label Text="C303 
                            Serverovna" FontSize="14" TextColor="White" HorizontalTextAlignment="Center" />
+                    <Label Text="ℹ️" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" />
+                    </StackLayout>
                 </Border>
 
                 <Border Grid.Row="5" Grid.Column="0" BackgroundColor="#4682B4" StrokeShape="RoundRectangle 10" Padding="20" WidthRequest="150" HeightRequest="90" TranslationX="15">

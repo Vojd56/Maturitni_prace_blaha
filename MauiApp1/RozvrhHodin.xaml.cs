@@ -6,11 +6,14 @@ namespace MauiApp1
 {
     public partial class RozvrhHodin : ContentPage
     {
+        // Kolekce pro rozvrh hodin
         public ObservableCollection<DenRozvrhu> Rozvrh { get; set; }
 
         public RozvrhHodin()
         {
             InitializeComponent();
+
+            // Naplnìní rozvrhu jednotlivými dny a pøedmìty
             Rozvrh = new ObservableCollection<DenRozvrhu>
             {
                 new DenRozvrhu("Pondìlí", new List<Predmet>
@@ -46,18 +49,18 @@ namespace MauiApp1
                 })
             };
 
+            // Nastavení datového kontextu pro vazbu na UI
             BindingContext = this;
-
-
         }
     }
 
+    // Tøída reprezentující jednotlivé pøedmìty v rozvrhu
     public class Predmet
     {
-        public string Nazev { get; set; }
-        public string Cas { get; set; }
-        public string Mistnost { get; set; }
-        public Color Barva { get; set; }
+        public string Nazev { get; set; }  // Název pøedmìtu
+        public string Cas { get; set; }    // Èasový úsek výuky
+        public string Mistnost { get; set; } // Místnost, kde se pøedmìt vyuèuje
+        public Color Barva { get; set; }   // Barva pro vizuální odlišení pøedmìtu
 
         public Predmet(string nazev, string cas, string mistnost, Color barva)
         {
@@ -68,10 +71,11 @@ namespace MauiApp1
         }
     }
 
+    // Tøída reprezentující rozvrh pro konkrétní den
     public class DenRozvrhu
     {
-        public string Den { get; set; }
-        public List<Predmet> Predmety { get; set; }
+        public string Den { get; set; }  // Název dne (napø. Pondìlí)
+        public List<Predmet> Predmety { get; set; } // Seznam pøedmìtù pro tento den
 
         public DenRozvrhu(string den, List<Predmet> predmety)
         {

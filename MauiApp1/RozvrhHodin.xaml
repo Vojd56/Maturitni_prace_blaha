@@ -3,39 +3,62 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.RozvrhHodin"
              Title="Rozvrh hodin">
+
+    <!-- Přidání posuvníku pro případ, že rozvrh bude delší než obrazovka -->
     <ScrollView>
         <VerticalStackLayout Spacing="20" Padding="10">
+
+            <!-- Hlavní CollectionView pro dny v rozvrhu -->
             <CollectionView 
-                            ItemsSource="{Binding Rozvrh}"
-                            SelectionMode="None">
+                ItemsSource="{Binding Rozvrh}" 
+                SelectionMode="None">
+
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <VerticalStackLayout>
-                            <Label Text="{Binding Den}" FontSize="22" FontAttributes="Bold" TextColor="Red" VerticalOptions="Center" Margin="0,0,0,5"/>
-                            <CollectionView ItemsSource="{Binding Predmety}"
-                                            SelectionMode="None">
+
+                            <!-- Název dne, např. Pondělí, Úterý... -->
+                            <Label Text="{Binding Den}" FontSize="22" FontAttributes="Bold" 
+                                   TextColor="#038DA0" VerticalOptions="Center" Margin="0,0,0,5"/>
+
+                            <!-- Druhé CollectionView pro jednotlivé předměty daného dne -->
+                            <CollectionView ItemsSource="{Binding Predmety}" SelectionMode="None">
                                 <CollectionView.ItemTemplate>
                                     <DataTemplate>
-                                        <Frame Padding="10" CornerRadius="30" BackgroundColor="{Binding Barva}" Margin="5" WidthRequest="320">
+
+                                        <!-- Karta s informacemi o předmětu -->
+                                        <Frame Padding="10" CornerRadius="30" BackgroundColor="{Binding Barva}" 
+                                               Margin="5" WidthRequest="320">
+
+                                            <!-- AbsoluteLayout umožňuje přesné umístění prvků -->
                                             <AbsoluteLayout>
                                                 <VerticalStackLayout>
-                                                    <Label Text="{Binding Nazev}" FontSize="18" FontAttributes="Bold" TextColor="White"/>
+
+                                                    <!-- Název předmětu, např. Matematika, Angličtina... -->
+                                                    <Label Text="{Binding Nazev}" FontSize="18" FontAttributes="Bold" 
+                                                           TextColor="#97D0DB"/>
+
+                                                    <!-- Čas výuky předmětu, např. 8:00 - 8:45 -->
                                                     <Label Text="{Binding Cas}" FontSize="14" TextColor="White"/>
                                                 </VerticalStackLayout>
+
+                                                <!-- Místnost, kde se předmět vyučuje, zarovnaná doprava dole -->
                                                 <Label Text="{Binding Mistnost}" FontSize="12" TextColor="White" 
-               AbsoluteLayout.LayoutFlags="PositionProportional" 
-               AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize" 
-               Padding="1"/>
+                                                       AbsoluteLayout.LayoutFlags="PositionProportional" 
+                                                       AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize" 
+                                                       Padding="1"/>
                                             </AbsoluteLayout>
                                         </Frame>
 
                                     </DataTemplate>
                                 </CollectionView.ItemTemplate>
                             </CollectionView>
+
                         </VerticalStackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

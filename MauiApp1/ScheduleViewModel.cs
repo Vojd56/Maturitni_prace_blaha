@@ -4,35 +4,39 @@ namespace MauiApp1
 {
     public class ScheduleViewModel : INotifyPropertyChanged
     {
-        private string schedule;
-        private System.Timers.Timer timer1;
+        private string schedule;  // Promìnná pro uchování textu rozvrhu
+        private System.Timers.Timer timer1;  // Èasovaè pro aktualizaci rozvrhu každou sekundu
 
+        // Vlastnost pro propojení s UI, která zobrazuje informace o rozvrhu
         public string ScheduleText
         {
             get => schedule;
             set
             {
                 schedule = value;
-                OnPropertyChanged(nameof(ScheduleText));
+                OnPropertyChanged(nameof(ScheduleText));  // Oznámení UI o zmìnì vlastnosti
             }
         }
 
+        // Konstruktor, ve kterém je spuštìn èasovaè
         public ScheduleViewModel()
         {
-            StartTimer();
+            StartTimer();  // Spuštìní èasovaèe pro aktualizaci rozvrhu
         }
 
+        // Metoda pro inicializaci èasovaèe
         private void StartTimer()
         {
-            timer1 = new System.Timers.Timer(1000); // Aktualizace každou sekundu
-            timer1.Elapsed += (sender, e) => UpdateSchedule();
-            timer1.Start();
-            UpdateSchedule();
+            timer1 = new System.Timers.Timer(1000); // Nastavení èasovaèe, který se spustí každou sekundu
+            timer1.Elapsed += (sender, e) => UpdateSchedule();  // Událost pro aktualizaci rozvrhu pøi každém "tiknutí" èasovaèe
+            timer1.Start();  // Spuštìní èasovaèe
+            UpdateSchedule();  // Poèáteèní aktualizace rozvrhu pøi naètení stránky
         }
 
+        // Metoda, která aktualizuje rozvrh na základì aktuálního data a èasu
         private void UpdateSchedule()
         {
-            var now = DateTime.Now;
+            var now = DateTime.Now;  // Získání aktuálního data a èasu
 
             // Seznam státních svátkù
             var statniSvatky = new List<DateTime>
@@ -61,34 +65,34 @@ namespace MauiApp1
                 (new DateTime(now.Year, 6, 28), new DateTime(now.Year, 8, 31)) // Hlavní prázdniny
             };
 
-
-            // Kontrola státních svátkù
+            // Kontrola, jestli je dnes státní svátek
             if (statniSvatky.Contains(now.Date))
             {
-                ScheduleText = "Dnes je státní svátek,\n užívej volna!";
+                ScheduleText = "Dnes je státní svátek,\n užívej volna!";  // Zobrazení zprávy pro státní svátek
                 return;
             }
 
-            // Kontrola prázdnin
+            // Kontrola, jestli jsou právì prázdniny
             foreach (var (start, end) in prazdniny)
             {
                 if (now.Date >= start && now.Date <= end)
                 {
-                    ScheduleText = "Jsou prázdniny,\n užívej volna!";
+                    ScheduleText = "Jsou prázdniny,\n užívej volna!";  // Zobrazení zprávy pro prázdniny
                     return;
                 }
             }
 
-            // Kontrola víkendu
+            // Kontrola, jestli je víkend
             if (now.DayOfWeek == DayOfWeek.Saturday || now.DayOfWeek == DayOfWeek.Sunday)
             {
-                ScheduleText = "Máš volno,\n užívej víkend!";
+                ScheduleText = "Máš volno,\n užívej víkend!";  // Zobrazení zprávy pro víkend
                 return;
             }
 
-            TimeSpan nowTime = now.TimeOfDay;
-            TimeSpan startOfDay = new TimeSpan(7, 0, 0);
+            TimeSpan nowTime = now.TimeOfDay;  // Získání aktuálního èasu dne
+            TimeSpan startOfDay = new TimeSpan(7, 0, 0);  // Stanovení zaèátku pracovního dne (7:00)
 
+            // Seznam hodin v rozvrhu (pro každý den)
             var schedule = new (TimeSpan start, TimeSpan end, string lesson)[]
             {
                 (new TimeSpan(8, 0, 0), new TimeSpan(8, 45, 0), "1. hodina"),
@@ -98,6 +102,7 @@ namespace MauiApp1
                 (new TimeSpan(11, 40, 0), new TimeSpan(12, 25, 0), "5. hodina")
             };
 
+            // Pøidání hodin pro dny, které nejsou pátek
             if (now.DayOfWeek != DayOfWeek.Friday)
             {
                 schedule = schedule.Concat(new (TimeSpan, TimeSpan, string)[]
@@ -106,37 +111,42 @@ namespace MauiApp1
                     (new TimeSpan(13, 15, 0), new TimeSpan(14, 10, 0), "7. hodina")
                 }).ToArray();
             }
+            // Pokud je pátek a èas je po 12:25, zobrazení zprávy o volnu
             else if (nowTime >= new TimeSpan(12, 25, 0))
             {
-                ScheduleText = "Máš volno, užívej!";
+                ScheduleText = "Máš volno, užívej!";  // Zpráva pro pátek po poledni
                 return;
             }
 
+            // Pokud je èas pøed zaèátkem pracovního dne, zobrazí se zpráva o spánku
             if (nowTime < startOfDay)
             {
-                ScheduleText = "Ještì mùžeš spát";
+                ScheduleText = "Ještì mùžeš spát";  // Zpráva pro èas pøed 7:00
                 return;
             }
 
+            // Procházíme rozvrh a zjistíme, která hodina právì probíhá nebo na kterou se èeká
             foreach (var (start, end, lesson) in schedule)
             {
                 if (nowTime >= start && nowTime < end)
                 {
-                    TimeSpan remaining = end - nowTime;
-                    ScheduleText = $"{lesson} probíhá\nZbývá: {remaining.Minutes} min {remaining.Seconds} s";
+                    TimeSpan remaining = end - nowTime;  // Zbývající èas do konce hodiny
+                    ScheduleText = $"{lesson} probíhá\nZbývá: {remaining.Minutes} min {remaining.Seconds} s";  // Zobrazení informací o probíhající hodinì
                     return;
                 }
                 else if (nowTime < start)
                 {
-                    TimeSpan countdown = start - nowTime;
-                    ScheduleText = $"Následuje {lesson}\nza {countdown.Minutes} min {countdown.Seconds} s";
+                    TimeSpan countdown = start - nowTime;  // Èas do zaèátku následující hodiny
+                    ScheduleText = $"Následuje {lesson}\nza {countdown.Minutes} min {countdown.Seconds} s";  // Zobrazení èasu do zaèátku následující hodiny
                     return;
                 }
             }
 
-            ScheduleText = "Máš volno, užívej!";
+            // Pokud není žádná hodina v rozvrhu, zobrazení zprávy o volnu
+            ScheduleText = "Máš volno, užívej!";  // Zpráva, když není žádná hodina v rozvrhu
         }
 
+        // Událost pro notifikaci o zmìnách vlastností
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {

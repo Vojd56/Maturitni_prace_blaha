@@ -14,32 +14,39 @@
                    HorizontalOptions="Center" />
         </StackLayout>
 
+        <!-- Hlavní kolekce pro knihy a jejich kategorie -->
         <CollectionView ItemsSource="{Binding BookCategories}" SelectionMode="None" Grid.Row="1">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="10" Spacing="10">
+                        <!-- Název kategorie -->
                         <Label Text="{Binding CategoryName}" 
-                               TextColor="WhiteSmoke" 
+                               TextColor="#038DA0" 
                                FontSize="20" 
                                FontAttributes="Bold" />
 
+                        <!-- Seznam knih v rámci kategorie -->
                         <CollectionView ItemsSource="{Binding Books}" SelectionMode="None">
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
                                     <Frame Padding="5"
                                            CornerRadius="10"
-                                           BorderColor="LightGray"
+                                           BorderColor="#4DADBD"
                                            HasShadow="True"
                                            Margin="0,5">
+                                        <!-- Gesture recognizer pro reakci na kliknutí -->
                                         <Frame.GestureRecognizers>
                                             <TapGestureRecognizer Command="{Binding ToggleSelectionCommand}" />
                                         </Frame.GestureRecognizers>
 
+                                        <!-- Horizontální layout pro zobrazení checkboxu a názvu knihy -->
                                         <HorizontalStackLayout Spacing="10">
+                                            <!-- Checkbox pro výběr knihy -->
                                             <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}" 
-                                                      IsEnabled="{Binding IsEnabled}"
+                                                      IsEnabled="{Binding IsEnabled}" 
                                                       CheckedChanged="OnBookCheckedChanged" />
 
+                                            <!-- Text s názvem knihy -->
                                             <Label Text="{Binding Title}"
                                                    FontSize="14" 
                                                    VerticalOptions="Center"
@@ -68,8 +75,9 @@
                 HorizontalOptions="End"
                 VerticalOptions="End"
                 Margin="20">
+            <!-- Ikona pro tlačítko -->
             <Button.ImageSource>
-                <FontImageSource Glyph="📄" Size="30" Color="White"/>
+                <FontImageSource Glyph="📄" Size="30" Color="#038DA0"/>
             </Button.ImageSource>
         </Button>
 

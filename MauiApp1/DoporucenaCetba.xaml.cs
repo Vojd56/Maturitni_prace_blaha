@@ -52,8 +52,25 @@ public partial class DoporucenaCetba : ContentPage
             var font = new XFont("Verdana", 12, XFontStyle.Regular);
 
             double yPoint = 20;
-            gfx.DrawString("Doporuèená èetba", font, XBrushes.Black, new XPoint(20, yPoint));
-            yPoint += 20;
+            // Získání šíøky plátna a šíøky textu pro první dva øádky
+            double canvasWidth = gfx.PdfPage.Width;
+            double text1Width = gfx.MeasureString("Seznam literárních dìl k ústní zkoušce", font).Width;
+            double text2Width = gfx.MeasureString("z èeského jazyka a literatury", font).Width;
+
+            // Výpoèet pozice pro støed
+            double centerX1 = (canvasWidth - text1Width) / 2;
+            double centerX2 = (canvasWidth - text2Width) / 2;
+
+            // První dva øádky uprostøed
+            gfx.DrawString("Seznam literárních dìl k ústní zkoušce", font, XBrushes.Black, new XPoint(centerX1, 20));
+            gfx.DrawString("z èeského jazyka a literatury", font, XBrushes.Black, new XPoint(centerX2, 30));
+
+            // Zbytek textu na levém okraji
+            gfx.DrawString("Jméno:", font, XBrushes.Black, new XPoint(14, 60));
+            gfx.DrawString("Tøída", font, XBrushes.Black, new XPoint(14, 80));
+            gfx.DrawString("Školní rok: 2024/2025", font, XBrushes.Black, new XPoint(14, 10));
+
+            yPoint += 90;
 
             // Iterace pøes vybrané knihy
             int bookNumber = 1;

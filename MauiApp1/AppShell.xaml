@@ -13,21 +13,24 @@
     </Shell.ToolbarItems>
 
     <ShellContent
-        Title="Hlavní stránka"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    Title="Hlavní stránka 🏠"
+    ContentTemplate="{DataTemplate local:MainPage}"
+    Route="MainPage" />
     <ShellContent
-        Title="Rozvrh"
-        ContentTemplate="{DataTemplate local:RozvrhHodin}"
-        Route="RozvrhHodin" />
+    Title="Rozvrh 📅"
+    ContentTemplate="{DataTemplate local:RozvrhHodin}"
+    Route="RozvrhHodin" />
     <ShellContent
-        Title="Mapa"
-        ContentTemplate="{DataTemplate local:Kontakty}"
-        Route="Kontakty" />
+    Title="Mapa 🗺️"
+    ContentTemplate="{DataTemplate local:Kontakty}"
+    Route="Kontakty" />
     <ShellContent
-        Title="Seznam Četby"
-        ContentTemplate="{DataTemplate local:DoporucenaCetba}"
-        Route="DoporucenaCetba" />
+    Title="Seznam Četby 📚"
+    ContentTemplate="{DataTemplate local:DoporucenaCetba}"
+    Route="DoporucenaCetba" />
+
 
 
 </Shell>
+
+
